@@ -8,5 +8,5 @@ To run the app, use this command:
 ```
 yarn next-dev
 ```
-You can visit the website on your browser at localhost:3000
+You can visit the website on your browser at localhost:3000 \n
 The alt layout (cryptomodern) can be viewed at localhost:3000/alt
