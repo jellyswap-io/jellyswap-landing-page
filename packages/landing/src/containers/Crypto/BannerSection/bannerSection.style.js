@@ -22,8 +22,8 @@ const BannerWrapper = styled.section`
     padding-bottom: 210px;
   }
   @media (max-width: 768px) {
-    background-image: none;
-    background-color: #6d4efe;
+    // background-image: none;
+    // background-color: #6d4efe;
   }
 
   @media only screen and (max-width: 480px) {

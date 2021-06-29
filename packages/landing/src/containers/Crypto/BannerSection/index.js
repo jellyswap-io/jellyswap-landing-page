@@ -27,15 +27,15 @@ const BannerSection = ({
   const ButtonGroup = () => (
     <Fragment>
       <Button
-        title="View Blog"
-        onClick={()=>window.open("https://google.com/")} //TODO
+        title="View Updates"
+        onClick={() => window.open('https://google.com/')} //TODO
         {...btnStyle}
       />
       <Button
         title="Download Whitepaper"
         variant="textButton"
         icon={<i className="flaticon-next" />}
-        onClick={()=>window.open("https://google.com/")} //TODO
+        onClick={() => window.open('https://google.com/')} //TODO
         {...outlineBtnStyle}
       />
     </Fragment>
@@ -43,13 +43,13 @@ const BannerSection = ({
   const CommunityButtonGroup = () => (
     <Fragment>
       <Button
-        title="Join Our Telegarm"
+        title="Join Our Telegram"
         variant="textButton"
         iconPosition="left"
         icon={<Icon icon={telegram} />}
         {...outlineBtnStyle}
         className="btnWithoutColor"
-        onClick={()=>window.open("http://t.me/jellyswapfinance")}
+        onClick={() => window.open('http://t.me/jellyswapfinance')}
       />
       <Button
         title="Join Our Discord"
@@ -58,7 +58,7 @@ const BannerSection = ({
         icon={<Icon icon={socialDiscord} />}
         {...outlineBtnStyle}
         className="btnWithoutColor"
-        onClick={()=>window.open("https://discord.com/invite/nGFmaTY6z7")}
+        onClick={() => window.open('https://discord.com/invite/nGFmaTY6z7')}
       />
     </Fragment>
   );
@@ -72,15 +72,10 @@ const BannerSection = ({
         <Box className="row" {...row}>
           <Box className="col" {...col}>
             <FeatureBlock
-              title={
-                <Heading
-                  content="JellySwap"
-                  {...title}
-                />
-              }
+              title={<Heading content="JellySwap" {...title} />}
               description={
                 <Text
-                  content="The first decentralized exchange on the Cardano Blockchain"
+                  content="Introducing the first decentralized exchange on the Cardano Blockchain"
                   {...description}
                 />
               }
