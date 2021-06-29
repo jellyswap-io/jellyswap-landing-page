@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const TransactionsWrapper = styled.section`
+const DexWrapper = styled.section`
   padding: 120px 0 80px;
   @media (max-width: 1440px) {
     padding: 80px 0 50px;
@@ -52,7 +52,7 @@ const TransactionsWrapper = styled.section`
     @media (max-width: 1199px) {
       width: 100%;
       margin-left: 0;
-      margin-top: 100px;
+      margin-top: 0px;
     }
   }
 `;
@@ -75,4 +75,4 @@ const FeatureSection = styled.section`
     }
   }
 `;
-export { TransactionsWrapper, FeatureSection };
+export { DexWrapper, FeatureSection };

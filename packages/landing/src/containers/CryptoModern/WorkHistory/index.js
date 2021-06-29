@@ -48,7 +48,7 @@ const WorkHistory = ({ row, col, cardStyle, btnStyle }) => {
                 <h3>
                   <CountUp start={0} end={30000} duration={5} />+
                 </h3>
-                <Text content="Transactions" />
+                <Text content="Decentralized Exchange" />
               </Card>
             </CounterUpArea>
           </Box>

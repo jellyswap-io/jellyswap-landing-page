@@ -65,7 +65,7 @@ const FeatureSlider = ({ row, title, description, sectionSubTitle }) => {
   );
 };
 
-// Transactions style props
+// Dex style props
 FeatureSlider.propTypes = {
   sectionHeader: PropTypes.object,
   sectionTitle: PropTypes.object,
@@ -81,7 +81,6 @@ FeatureSlider.defaultProps = {
     flexWrap: 'wrap',
     ml: '-15px',
     mr: '-15px',
-    flexBox: true,
     flexDirection: 'column',
     alignSelf: 'center',
     justifyContent: 'center',
@@ -111,7 +110,6 @@ FeatureSlider.defaultProps = {
   sectionSubTitle: {
     content: 'Fast, Cheap, Zero Fraud',
     as: 'span',
-    textAlign: 'left',
     fontSize: ['16px', '16px', '18px', '20px', '20px'],
     fontFamily: 'Poppins',
     fontWeight: '600',

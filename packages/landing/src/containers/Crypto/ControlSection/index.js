@@ -103,7 +103,7 @@ const ControlSection = ({
   );
 };
 
-// Transactions style props
+// Dex style props
 ControlSection.propTypes = {
   sectionHeader: PropTypes.object,
   sectionTitle: PropTypes.object,
@@ -114,16 +114,16 @@ ControlSection.propTypes = {
   btnStyle: PropTypes.object,
 };
 
-// Transactions default style
+// Dex default style
 ControlSection.defaultProps = {
-  // Transactions section row default style
+  // Dex section row default style
   row: {
     flexBox: true,
     flexWrap: 'wrap',
     ml: '-15px',
     mr: '-15px',
   },
-  // Transactions section col default style
+  // Dex section col default style
   col: {
     pr: '15px',
     pl: '15px',
@@ -132,7 +132,7 @@ ControlSection.defaultProps = {
     alignSelf: 'center',
   },
 
-  // Transactions section title default style
+  // Dex section title default style
   title: {
     content: 'Take control of your credit and identity.',
     fontSize: ['24px', '26px', '30px', '36px', '40px'],
@@ -144,7 +144,7 @@ ControlSection.defaultProps = {
     maxWidth: ['100%', '100%', '100%', '100%', '415px'],
     textAlign: ['left', 'left'],
   },
-  // Transactions section description default style
+  // Dex section description default style
   description: {
     content:
       'Crumbs makes crypto investing effortless and automated, so now you would not miss the right time to buy. From the customer wallet to the marchent wallet in a few minute.',
@@ -159,7 +159,6 @@ ControlSection.defaultProps = {
   sectionSubTitle: {
     content: 'Effortless crypto for everyone.',
     as: 'span',
-    textAlign: 'left',
     fontSize: ['16px', '16px', '18px', '20px', '20px'],
     fontFamily: 'Poppins',
     fontWeight: '600',

@@ -64,7 +64,7 @@ const ScalableHistory = ({
   );
 };
 
-// Transactions style props
+// Dex style props
 ScalableHistory.propTypes = {
   sectionHeader: PropTypes.object,
   sectionTitle: PropTypes.object,
@@ -120,7 +120,6 @@ ScalableHistory.defaultProps = {
   sectionSubTitle: {
     content: 'Fast, Cheap, Zero Fraud',
     as: 'span',
-    textAlign: 'left',
     fontSize: ['16px', '16px', '18px', '20px', '20px'],
     fontFamily: 'Poppins',
     fontWeight: '600',

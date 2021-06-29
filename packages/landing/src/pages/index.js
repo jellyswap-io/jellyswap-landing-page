@@ -9,7 +9,7 @@ import { DrawerProvider } from 'common/contexts/DrawerContext';
 import Navbar from 'containers/Crypto/Navbar';
 import Banner from 'containers/Crypto/BannerSection';
 import BannerSlider from 'containers/Crypto/BannerSlider';
-import Transactions from 'containers/Crypto/Transaction';
+import Dex from 'containers/Crypto/Dex';
 import ControlSections from 'containers/Crypto/ControlSection';
 import TrustedProofSections from 'containers/Crypto/TrustedProof';
 import ScalableSections from 'containers/Crypto/ScalableSection';
@@ -41,12 +41,12 @@ const Main = () => {
             </DrawerProvider>
           </Sticky>
           <Banner />
-          <BannerSlider />
-          <Transactions />
-          <ControlSections />
+          {/*<BannerSlider />*/}
+          <Dex />
+          {/*<ControlSections />
           <TrustedProofSections />
           <ScalableSections />
-          <SlideSections />
+          <SlideSections />*/}
           <BetaSections />
           <Footer />
         </ContentWrapper>

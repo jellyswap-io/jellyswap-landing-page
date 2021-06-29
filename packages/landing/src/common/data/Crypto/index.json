@@ -53,26 +53,26 @@
       "avatar": "../../assets/image/crypto/author-1.jpg"
     }
   ],
-  "TRANSACTIONS_FEATURE": [
+  "DEX_FEATURE": [
     {
       "image": "../../assets/image/crypto/tf1.svg",
-      "title": "Create Payment Address",
-      "des": "Provide your payout wallet address and callback URL to PayBear API."
+      "title": "Decentralized Ownership",
+      "des": "Security from market manipulation, allowing anyone to profit off of providing liquidity or staking $JELLY."
     },
     {
       "image": "../../assets/image/crypto/tf2.svg",
-      "title": "Ask for Payment",
-      "des": "Show your customer the wallet address as well as the payment amount."
+      "title": "Ease of Use",
+      "des": "List your token on JellySwap within minutes."
     },
     {
       "image": "../../assets/image/crypto/tf3.svg",
-      "title": "Get Paid",
-      "des": "Payment is sent to the payout wallet immediately."
+      "title": "Anonymity",
+      "des": "Swap tokens without filling out a KYC form, offering privacy and anonymity."
     },
     {
       "image": "../../assets/image/crypto/tf4.svg",
-      "title": "Get Payment Notification.",
-      "des": "Callbacks are sent to the URL you specified. You can process customer order"
+      "title": "Control of Assets.",
+      "des": "Buy and sell tokens instantly without waiting for funds to clear."
     }
   ],
   "PROOFS_FEATURE": [

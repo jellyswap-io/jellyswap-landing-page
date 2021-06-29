@@ -8,10 +8,10 @@ import Heading from 'common/components/Heading';
 import Button from 'common/components/Button';
 import FeatureBlock from 'common/components/FeatureBlock';
 import Container from 'common/components/UI/Container';
-import { TRANSACTIONS_FEATURE } from 'common/data/Crypto';
-import { TransactionsWrapper, FeatureSection } from './transaction.style';
+import { DEX_FEATURE } from 'common/data/Crypto';
+import { DexWrapper, FeatureSection } from './dex.style';
 
-const TransactionsHistory = ({
+const DexHistory = ({
   row,
   col,
   title,
@@ -23,7 +23,7 @@ const TransactionsHistory = ({
   featureDescriptionStyle,
 }) => {
   return (
-    <TransactionsWrapper id="transactions">
+    <DexWrapper id="dex">
       <Container>
         <Box className="row" {...row}>
           <Box className="colleft" {...col} style={{ flexDirection: 'column' }}>
@@ -31,12 +31,12 @@ const TransactionsHistory = ({
             <FeatureBlock
               title={<Heading {...title} />}
               description={<Text {...description} />}
-              button={<Button title="GET DOCS" {...btnStyle} />}
+              /*button={<Button title="GET DOCS" {...btnStyle} />}*/
             />
           </Box>
           <Box className="colright" {...col} {...cardArea}>
             <FeatureSection>
-              {TRANSACTIONS_FEATURE.map((item, index) => (
+              {DEX_FEATURE.map((item, index) => (
                 <Fade up key={`feature-${index}`}>
                   <div className="featureWrapper">
                     <Image src={item.image} alt={item.title} />
@@ -53,12 +53,12 @@ const TransactionsHistory = ({
           </Box>
         </Box>
       </Container>
-    </TransactionsWrapper>
+    </DexWrapper>
   );
 };
 
-// Transactions style props
-TransactionsHistory.propTypes = {
+// Dex style props
+DexHistory.propTypes = {
   sectionHeader: PropTypes.object,
   sectionTitle: PropTypes.object,
   sectionSubTitle: PropTypes.object,
@@ -68,16 +68,16 @@ TransactionsHistory.propTypes = {
   featureDescriptionStyle: PropTypes.object,
 };
 
-// Transactions default style
-TransactionsHistory.defaultProps = {
-  // Transactions section row default style
+// Dex default style
+DexHistory.defaultProps = {
+  // Dex section row default style
   row: {
     flexBox: true,
     flexWrap: 'wrap',
     ml: '-15px',
     mr: '-15px',
   },
-  // Transactions section col default style
+  // Dex section col default style
   col: {
     pr: '15px',
     pl: '15px',
@@ -86,9 +86,9 @@ TransactionsHistory.defaultProps = {
     alignSelf: 'center',
   },
 
-  // Transactions section title default style
+  // Dex section title default style
   title: {
-    content: 'Our wallet is built for the crypto novice',
+    content: 'A Decentralized Exchange (DEX)',
     fontSize: ['24px', '26px', '30px', '36px', '40px'],
     lineHeight: ['30px', '32px', '40px', '50px', '55px'],
     fontWeight: '700',
@@ -98,10 +98,10 @@ TransactionsHistory.defaultProps = {
     maxWidth: ['100%', '100%', '100%', '100%', '415px'],
     textAlign: ['left', 'left'],
   },
-  // Transactions section description default style
+  // Dex section description default style
   description: {
     content:
-      'You can trust us for any kind of services and some of the world class companies have also trusted us .',
+      'A peer-to-peer, ownerless marketplace for cryptocurrency transactions.',
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',
@@ -111,9 +111,8 @@ TransactionsHistory.defaultProps = {
     maxWidth: ['100%', '100%', '100%', '100%', '430px'],
   },
   sectionSubTitle: {
-    content: 'How Transactions Work',
+    content: 'How JellySwap Works',
     as: 'span',
-    textAlign: 'left',
     fontSize: ['16px', '16px', '18px', '20px', '20px'],
     fontFamily: 'Poppins',
     fontWeight: '600',
@@ -136,7 +135,7 @@ TransactionsHistory.defaultProps = {
     mb: '10px',
     textAlign: ['left', 'left'],
   },
-  // Transactions section description default style
+  // Dex section description default style
   featureDescriptionStyle: {
     fontSize: '16px',
     fontWeight: '400',
@@ -146,4 +145,4 @@ TransactionsHistory.defaultProps = {
   },
 };
 
-export default TransactionsHistory;
+export default DexHistory;

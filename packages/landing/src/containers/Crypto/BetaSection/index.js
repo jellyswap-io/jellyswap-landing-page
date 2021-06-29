@@ -52,7 +52,7 @@ const BetaSection = ({
   );
 };
 
-// Transactions style props
+// Dex style props
 BetaSection.propTypes = {
   sectionHeader: PropTypes.object,
   sectionTitle: PropTypes.object,
@@ -69,7 +69,6 @@ BetaSection.defaultProps = {
     flexWrap: 'wrap',
     ml: '-15px',
     mr: '-15px',
-    flexBox: true,
     flexDirection: 'column',
     alignSelf: 'center',
     justifyContent: 'center',

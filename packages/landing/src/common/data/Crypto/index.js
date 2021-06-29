@@ -76,27 +76,27 @@ export const TESTIMONIALS = [
     avatar: `${AuthorFour}`,
   },
 ];
-export const TRANSACTIONS_FEATURE = [
+export const DEX_FEATURE = [
   {
     image: FEATURE1,
-    title: 'Create Payment Address',
-    des: 'Provide your payout wallet address and callback URL to PayBear API.',
+    title: 'Decentralized Ownership',
+    des: 'Security from market manipulation, allowing anyone to profit off of providing liquidity or staking $JELLY.',
   },
   {
     image: FEATURE2,
-    title: 'Ask for Payment',
-    des: 'Show your customer the wallet address as well as the payment amount.',
+    title: 'Ease of Use',
+    des: 'List your token on JellySwap within minutes.',
   },
   {
     image: FEATURE3,
-    title: 'Get Paid',
-    des: 'Payment is sent to the payout wallet immediately.',
+    title: 'Anonymity',
+    des: 'Swap tokens without filling out a KYC form, offering privacy and anonymity.',
   },
   {
     image: FEATURE4,
-    title: 'Get Payment Notification.',
+    title: 'Control of Assets',
     des:
-      'Callbacks are sent to the URL you specified. You can process customer order',
+      'Buy and sell tokens instantly without waiting for funds to clear.',
   },
 ];
 export const PROOFS_FEATURE = [
