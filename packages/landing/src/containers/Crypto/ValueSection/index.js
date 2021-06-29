@@ -7,10 +7,10 @@ import Text from 'common/components/Text';
 import Heading from 'common/components/Heading';
 import FeatureBlock from 'common/components/FeatureBlock';
 import Container from 'common/components/UI/Container';
-import { BETA_FEATURE } from 'common/data/Crypto';
-import { BetaSectionWrapper, FeatureSection } from './betaSection.style';
+import { VALUE_FEATURE } from 'common/data/Crypto';
+import { ValueSectionWrapper, FeatureSection } from './valueSection.style';
 
-const BetaSection = ({
+const ValueSection = ({
   row,
   title,
   description,
@@ -19,7 +19,7 @@ const BetaSection = ({
   featureDescriptionStyle,
 }) => {
   return (
-    <BetaSectionWrapper id="betasection">
+    <ValueSectionWrapper id="valuesection">
       <Container noGutter mobileGutter>
         <Box className="row" {...row}>
           <FeatureBlock
@@ -27,9 +27,9 @@ const BetaSection = ({
             description={<Text {...description} />}
           />
         </Box>
-        <Box className="BetaSection">
+        <Box className="ValueSection">
           <FeatureSection>
-            {BETA_FEATURE.map((item, index) => (
+            {VALUE_FEATURE.map((item, index) => (
               <Fade up key={`feature-${index}`}>
                 <div className="featureWrapper">
                   <Image src={item.image} alt={item.title} />
@@ -48,12 +48,12 @@ const BetaSection = ({
           </FeatureSection>
         </Box>
       </Container>
-    </BetaSectionWrapper>
+    </ValueSectionWrapper>
   );
 };
 
 // Dex style props
-BetaSection.propTypes = {
+ValueSection.propTypes = {
   sectionHeader: PropTypes.object,
   sectionTitle: PropTypes.object,
   row: PropTypes.object,
@@ -62,7 +62,7 @@ BetaSection.propTypes = {
 };
 
 // Trusted default style
-BetaSection.defaultProps = {
+ValueSection.defaultProps = {
   // Trusted section row default style
   row: {
     flexBox: true,
@@ -75,7 +75,7 @@ BetaSection.defaultProps = {
   },
 
   title: {
-    content: 'Be the first to use our Beta!',
+    content: 'Bringing Value to Jelly Token',
     fontSize: ['24px', '26px', '30px', '36px', '40px'],
     lineHeight: ['30px', '32px', '40px', '50px', '55px'],
     fontWeight: '700',
@@ -86,7 +86,7 @@ BetaSection.defaultProps = {
   },
 
   description: {
-    content: 'Become part of our ever growing community.',
+    content: 'Every transaction will have a fee of 0.25% to capture value for $JELLY',
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',
@@ -113,4 +113,4 @@ BetaSection.defaultProps = {
   },
 };
 
-export default BetaSection;
+export default ValueSection;

@@ -80,7 +80,7 @@ export const DEX_FEATURE = [
   {
     image: FEATURE1,
     title: 'Decentralized Ownership',
-    des: 'Security from market manipulation, allowing anyone to profit off of providing liquidity or staking $JELLY.',
+    des: 'Anyone can profit off of providing liquidity or staking $JELLY.',
   },
   {
     image: FEATURE2,
@@ -154,21 +154,21 @@ export const SCALABLE_FEATURE = [
   },
 ];
 
-export const BETA_FEATURE = [
+export const VALUE_FEATURE = [
   {
     image: BETA1,
-    title: 'SEPA Transfers',
-    des: 'Deposit & Withdraw money.',
+    title: '0.17% | Liquidity Providers',
+    des: 'Increase liquidity & attract investors',
   },
   {
     image: BETA2,
-    title: '24/7 Support',
-    des: 'Always here for you.',
+    title: '0.05% | Buy-Back & Burn',
+    des: 'Increase demand & reduce supply',
   },
   {
     image: BETA3,
-    title: 'Secure',
-    des: 'Your money is safe.',
+    title: '0.03% | The Treasury',
+    des: 'Fund development & marketing',
   },
 ];
 

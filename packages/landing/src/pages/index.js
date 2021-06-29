@@ -14,7 +14,7 @@ import ControlSections from 'containers/Crypto/ControlSection';
 import TrustedProofSections from 'containers/Crypto/TrustedProof';
 import ScalableSections from 'containers/Crypto/ScalableSection';
 import SlideSections from 'containers/Crypto/CryptoSlides';
-import BetaSections from 'containers/Crypto/BetaSection';
+import ValueSections from 'containers/Crypto/ValueSection';
 import Footer from 'containers/Crypto/Footer';
 
 const Main = () => {
@@ -47,7 +47,7 @@ const Main = () => {
           <TrustedProofSections />
           <ScalableSections />
           <SlideSections />*/}
-          <BetaSections />
+          <ValueSections />
           <Footer />
         </ContentWrapper>
       </Fragment>
