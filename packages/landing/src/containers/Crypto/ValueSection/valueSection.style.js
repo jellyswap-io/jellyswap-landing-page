@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const BetaSectionWrapper = styled.section`
+const ValueSectionWrapper = styled.section`
   padding: 30px 0 400px;
 `;
 const FeatureSection = styled.section`
@@ -34,4 +34,4 @@ const FeatureSection = styled.section`
     }
   }
 `;
-export { BetaSectionWrapper, FeatureSection };
+export { ValueSectionWrapper, FeatureSection };
