@@ -9,7 +9,7 @@ import FeatureBlock from 'common/components/FeatureBlock';
 import Container from 'common/components/UI/Container';
 import Particles from '../Particle';
 import { Icon } from 'react-icons-kit';
-import { socialTwitter } from 'react-icons-kit/ionicons/socialTwitter';
+import { telegram } from 'react-icons-kit/icomoon/telegram';
 import { socialDiscord } from 'common/icons/socialDiscord';
 import BannerBG from 'common/assets/image/crypto/white_bg1.svg';
 import BannerWrapper, { BgImageWrapper } from './bannerSection.style';
@@ -26,44 +26,39 @@ const BannerSection = ({
 }) => {
   const ButtonGroup = () => (
     <Fragment>
-      <Button title="Get Started" {...btnStyle} />
+      <Button
+        title="View Blog"
+        onClick={()=>window.open("https://google.com/")} //TODO
+        {...btnStyle}
+      />
       <Button
         title="Download Whitepaper"
         variant="textButton"
         icon={<i className="flaticon-next" />}
-        onClick={(e) => {
-          e.preventDefault();
-          window.location.href = 'https://google.com';
-        }}
+        onClick={()=>window.open("https://google.com/")} //TODO
         {...outlineBtnStyle}
       />
     </Fragment>
   );
-  const ShareButtonGroup = () => (
+  const CommunityButtonGroup = () => (
     <Fragment>
       <Button
-        title="Share on Twitter"
+        title="Join Our Telegarm"
         variant="textButton"
         iconPosition="left"
-        icon={<Icon icon={socialTwitter} />}
+        icon={<Icon icon={telegram} />}
         {...outlineBtnStyle}
         className="btnWithoutColor"
-        onClick={(e) => {
-          e.preventDefault();
-          window.location.href = 'https://twitter.com';
-        }}
+        onClick={()=>window.open("http://t.me/jellyswapfinance")}
       />
       <Button
-        title="Join our Discord"
+        title="Join Our Discord"
         variant="textButton"
         iconPosition="left"
         icon={<Icon icon={socialDiscord} />}
         {...outlineBtnStyle}
         className="btnWithoutColor"
-        onClick={(e) => {
-          e.preventDefault();
-          window.location.href = 'https://discord.com';
-        }}
+        onClick={()=>window.open("https://discord.com/invite/nGFmaTY6z7")}
       />
     </Fragment>
   );
@@ -79,19 +74,19 @@ const BannerSection = ({
             <FeatureBlock
               title={
                 <Heading
-                  content="Accounts Payable Automation 80% Faster Bill Pay and AP"
+                  content="JellySwap"
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="Agencies around the world are moving to the digital agencies. So, It is high time to introduce your agency digitaly."
+                  content="The first decentralized exchange on the Cardano Blockchain"
                   {...description}
                 />
               }
               button={<ButtonGroup />}
             />
-            <FeatureBlock button={<ShareButtonGroup />} />
+            <FeatureBlock button={<CommunityButtonGroup />} />
           </Box>
         </Box>
       </Container>
@@ -123,7 +118,7 @@ BannerSection.defaultProps = {
     width: ['100%', '100%', '100%', '60%', '65%'],
   },
   title: {
-    fontSize: ['32px', '68px', '84px', '84px', '94px'],
+    fontSize: ['52px', '68px', '84px', '84px', '94px'],
     fontWeight: '700',
     color: '#fff',
     letterSpacing: '-0.025em',

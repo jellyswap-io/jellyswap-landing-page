@@ -6,7 +6,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1,
-  h2,
+  h2 {
+    font-family: 'Poppins', sans-serif;
+  }
   h3,
   h4,
   h5,
