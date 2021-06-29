@@ -19,39 +19,39 @@ import Footer from 'containers/Crypto/Footer';
 
 const Main = () => {
   return (
-      <ThemeProvider theme={cryptoTheme}>
-        <Fragment>
-          <Head>
-            <title>Cryptocurrency | A react next landing page</title>
-            <meta name="Description" content="React next landing page" />
-            <meta name="theme-color" content="#ec5555" />
+    <ThemeProvider theme={cryptoTheme}>
+      <Fragment>
+        <Head>
+          <title>JellySwap | Cardano DEX</title>
+          <meta name="Description" content="React next landing page" />
+          <meta name="theme-color" content="#ec5555" />
 
-            {/* Load google fonts */}
-            <link
-                href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Heebo:300,400,500,700"
-                rel="stylesheet"
-            />
-          </Head>
-          <ResetCSS />
-          <GlobalStyle />
-          <ContentWrapper>
-            <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
-              <DrawerProvider>
-                <Navbar />
-              </DrawerProvider>
-            </Sticky>
-            <Banner />
-            <BannerSlider />
-            <Transactions />
-            <ControlSections />
-            <TrustedProofSections />
-            <ScalableSections />
-            <SlideSections />
-            <BetaSections />
-            <Footer />
-          </ContentWrapper>
-        </Fragment>
-      </ThemeProvider>
+          {/* Load google fonts */}
+          <link
+            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Heebo:300,400,500,700"
+            rel="stylesheet"
+          />
+        </Head>
+        <ResetCSS />
+        <GlobalStyle />
+        <ContentWrapper>
+          <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
+            <DrawerProvider>
+              <Navbar />
+            </DrawerProvider>
+          </Sticky>
+          <Banner />
+          <BannerSlider />
+          <Transactions />
+          <ControlSections />
+          <TrustedProofSections />
+          <ScalableSections />
+          <SlideSections />
+          <BetaSections />
+          <Footer />
+        </ContentWrapper>
+      </Fragment>
+    </ThemeProvider>
   );
 };
 export default Main;

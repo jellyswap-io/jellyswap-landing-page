@@ -31,6 +31,10 @@ const BannerSection = ({
         title="Download Whitepaper"
         variant="textButton"
         icon={<i className="flaticon-next" />}
+        onClick={(e) => {
+          e.preventDefault();
+          window.location.href = 'https://google.com';
+        }}
         {...outlineBtnStyle}
       />
     </Fragment>
@@ -44,6 +48,10 @@ const BannerSection = ({
         icon={<Icon icon={socialTwitter} />}
         {...outlineBtnStyle}
         className="btnWithoutColor"
+        onClick={(e) => {
+          e.preventDefault();
+          window.location.href = 'https://twitter.com';
+        }}
       />
       <Button
         title="Join our Discord"
@@ -52,6 +60,10 @@ const BannerSection = ({
         icon={<Icon icon={socialDiscord} />}
         {...outlineBtnStyle}
         className="btnWithoutColor"
+        onClick={(e) => {
+          e.preventDefault();
+          window.location.href = 'https://discord.com';
+        }}
       />
     </Fragment>
   );
@@ -111,7 +123,7 @@ BannerSection.defaultProps = {
     width: ['100%', '100%', '100%', '60%', '65%'],
   },
   title: {
-    fontSize: ['26px', '34px', '42px', '42px', '47px'],
+    fontSize: ['32px', '68px', '84px', '84px', '94px'],
     fontWeight: '700',
     color: '#fff',
     letterSpacing: '-0.025em',
