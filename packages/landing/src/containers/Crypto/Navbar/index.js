@@ -13,8 +13,8 @@ import { DrawerContext } from 'common/contexts/DrawerContext';
 import { MENU_ITEMS } from 'common/data/Crypto';
 import ScrollSpyMenu from 'common/components/ScrollSpyMenu';
 
-import LogoImage from 'common/assets/image/saasModern/logo-white.png';
-import LogoImageAlt from 'common/assets/image/saasModern/logo.png';
+import LogoImage from 'common/assets/image/logo-simple.svg';
+import LogoImageAlt from 'common/assets/image/logo-alt.svg';
 
 const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
   const { state, dispatch } = useContext(DrawerContext);
@@ -101,7 +101,8 @@ Navbar.defaultProps = {
     width: '100%',
   },
   logoStyle: {
-    maxWidth: ['120px', '130px'],
+    minWidth: ['140px', '150px'],
+    maxWidth: ['140px', '150px'],
   },
   button: {
     type: 'button',

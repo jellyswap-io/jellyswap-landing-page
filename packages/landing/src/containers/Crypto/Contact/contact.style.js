@@ -72,12 +72,12 @@ const ContactFromWrapper = styled.div`
     position: absolute;
     right: 20px;
     border-radius: 6px;
-    background-color: rgb(106, 82, 253);
+    background-color: #ff7675;
     height: 60px;
     top: 12px;
     &:hover {
-      background-color: rgb(106, 82, 253);
-      border-color: gb(106, 82, 253);
+      background-color: #ff7675;
+      border-color: #ff7675;
       opacity: 0.85;
     }
     @media (max-width: 990px) {
