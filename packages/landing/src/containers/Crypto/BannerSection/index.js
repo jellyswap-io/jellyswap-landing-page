@@ -10,7 +10,7 @@ import Container from 'common/components/UI/Container';
 import Particles from '../Particle';
 import { Icon } from 'react-icons-kit';
 import { socialTwitter } from 'react-icons-kit/ionicons/socialTwitter';
-import { facebook2 } from 'react-icons-kit/icomoon/facebook2';
+import { socialDiscord } from 'common/icons/socialDiscord';
 import BannerBG from 'common/assets/image/crypto/white_bg1.svg';
 import BannerWrapper, { BgImageWrapper } from './bannerSection.style';
 
@@ -46,10 +46,10 @@ const BannerSection = ({
         className="btnWithoutColor"
       />
       <Button
-        title="Share on Facebook"
+        title="Join our Discord"
         variant="textButton"
         iconPosition="left"
-        icon={<Icon icon={facebook2} />}
+        icon={<Icon icon={socialDiscord} />}
         {...outlineBtnStyle}
         className="btnWithoutColor"
       />
