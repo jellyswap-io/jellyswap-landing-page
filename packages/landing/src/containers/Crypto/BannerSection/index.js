@@ -28,7 +28,7 @@ const BannerSection = ({
     <Fragment>
       <Button
         title="View Updates"
-        onClick={() => window.open('https://google.com/')} //TODO
+        onClick={() => window.open('https://medium.com/')} //TODO
         {...btnStyle}
       />
       <Button

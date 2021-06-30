@@ -58,48 +58,70 @@ const FeatureSection = styled.section`
     overflow: hidden;
   }
   .TwitterDescription {
-    color: #51ABF1;
+    color: #51abf1;
     font-size: 15px;
     margin-top: 5px;
   }
   .TelegramDescription {
-    color: #019FE3;
+    color: #019fe3;
     font-size: 15px;
     margin-top: 5px;
   }
   .DiscordDescription {
-    color: #5D72C7;
+    color: #5d72c7;
     font-size: 15px;
     margin-top: 5px;
   }
   .RedditDescription {
-    color: #EF4724;
+    color: #ef4724;
     font-size: 15px;
     margin-top: 5px;
   }
   .TwitterTitle {
     margin: 5px;
-    color: #51ABF1;
+    color: #51abf1;
     font-size: 17px;
     font-weight: 700;
   }
   .TelegramTitle {
     margin: 5px;
-    color: #019FE3;
+    color: #019fe3;
     font-size: 17px;
     font-weight: 700;
   }
   .DiscordTitle {
     margin: 5px;
-    color: #5D72C7;
+    color: #5d72c7;
     font-size: 17px;
     font-weight: 700;
   }
   .RedditTitle {
     margin: 5px;
-    color: #EF4724;
+    color: #ef4724;
     font-size: 17px;
     font-weight: 700;
+  }
+
+  .socials {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-around;
+    margin: 1em 0px;
+    padding: 1em 2em;
+    width: 100%;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  @media (max-width: 720px) {
+    .socials {
+      flex-direction: column;
+      -webkit-box-align: center;
+      align-items: center;
+    }
   }
 `;
 export { SocialSectionWrapper, FeatureSection };

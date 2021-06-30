@@ -30,30 +30,25 @@ const SocialSection = ({
         </Box>
         <Box className="SocialSection">
           <FeatureSection>
-            {SOCIAL_FEATURE.map((item, index) => (
-              <Fade up key={`feature-${index}`}>
-                <a className="socialButton" href={item.link} target="_blank" rel="noreferrer">
-                  <div
-                    className="socialImage"
-                    style={{backgroundImage: `url(${item.image})`}}
-                  />
-                  <p className={item.title + "Title"}>{item.title}</p>
-                  <p className={item.title + "Description"}>{item.des}</p>
-                </a>
-                {/*<div>{
-                  <Image src={item.image} alt={item.title} />
-                  <Box className="contextPortion">
-                    <Heading
-                      as="h3"
-                      content={item.title}
-                      {...featureTitleStyle}
+            <div className="socials">
+              {SOCIAL_FEATURE.map((item, index) => (
+                <Fade up key={`feature-${index}`}>
+                  <a
+                    className="socialButton"
+                    href={item.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div
+                      className="socialImage"
+                      style={{ backgroundImage: `url(${item.image})` }}
                     />
-
-                    <Text content={item.des} {...featureDescriptionStyle} />
-                  </Box>
-                </div>*/}
-              </Fade>
-            ))}
+                    <p className={item.title + 'Title'}>{item.title}</p>
+                    <p className={item.title + 'Description'}>{item.des}</p>
+                  </a>
+                </Fade>
+              ))}
+            </div>
           </FeatureSection>
         </Box>
       </Container>

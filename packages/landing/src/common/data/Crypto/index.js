@@ -16,10 +16,10 @@ import JACKPOTIMG from '../../assets/image/crypto/jackpot.svg';
 import BETA1 from '../../assets/image/crypto/beta-1.svg';
 import BETA2 from '../../assets/image/crypto/beta-2.svg';
 import BETA3 from '../../assets/image/crypto/beta-3.svg';
-import discord from 'common/assets/image/crypto/discord.png'
-import reddit from 'common/assets/image/crypto/reddit.png'
-import twitter from 'common/assets/image/crypto/twitter.png'
-import telegram from 'common/assets/image/crypto/telegram.png'
+import discord from 'common/assets/image/crypto/discord.png';
+import reddit from 'common/assets/image/crypto/reddit.png';
+import twitter from 'common/assets/image/crypto/twitter.png';
+import telegram from 'common/assets/image/crypto/telegram.png';
 
 export const MENU_ITEMS = [
   {
@@ -95,13 +95,13 @@ export const DEX_FEATURE = [
   {
     image: FEATURE3,
     title: 'Anonymity',
-    des: 'Swap tokens without filling out a KYC form, offering privacy and anonymity.',
+    des:
+      'Swap tokens without filling out a KYC form, offering privacy and anonymity.',
   },
   {
     image: FEATURE4,
     title: 'Control of Assets',
-    des:
-      'Buy and sell tokens instantly without waiting for funds to clear.',
+    des: 'Buy and sell tokens instantly without waiting for funds to clear.',
   },
 ];
 
@@ -116,19 +116,19 @@ export const SOCIAL_FEATURE = [
     image: discord,
     title: 'Discord',
     des: 'View announcements, enter giveaways, & engage with the community.',
-    link: 'https://discord.com/invite/nGFmaTY6z7'
+    link: 'https://discord.com/invite/nGFmaTY6z7',
   },
   {
     image: reddit,
     title: 'Reddit',
-    des: 'Join the JellySwap community on our subreddit at /r/JellySwap.',
-    link: 'https://reddit.com/' // TODO
+    des: 'Join the JellySwap community on our subreddit at r/JellySwap.',
+    link: 'https://reddit.com/', // TODO
   },
   {
     image: telegram,
     title: 'Telegram',
     des: 'Join @JellySwapFinance to stay up to date with announcements.',
-    link: 'https://t.me/jellyswapfinance'
+    link: 'https://t.me/jellyswapfinance',
   },
 ];
 
