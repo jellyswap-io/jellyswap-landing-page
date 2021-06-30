@@ -20,7 +20,7 @@ const SocialSection = ({
   featureDescriptionStyle,
 }) => {
   return (
-    <SocialSectionWrapper id="socialsection">
+    <SocialSectionWrapper id="socialsection" className={"glow-pink"}>
       <Container noGutter mobileGutter>
         <Box className="row" {...row}>
           <FeatureBlock

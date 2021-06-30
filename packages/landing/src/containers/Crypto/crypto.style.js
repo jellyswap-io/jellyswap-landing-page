@@ -110,6 +110,13 @@ export const GlobalStyle = createGlobalStyle`
       }
     }
   }
+  
+  .glow-pink {
+    background: radial-gradient(rgb(248, 203, 212) -100%, transparent 70%);
+  }
+  .glow-teal {
+    background: radial-gradient(rgb(172, 246, 255) -100%, transparent 70%);
+  }
 `;
 
 export const ContentWrapper = styled.div`

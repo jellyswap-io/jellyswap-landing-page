@@ -22,7 +22,7 @@ const DexHistory = ({
   featureDescriptionStyle,
 }) => {
   return (
-    <DexWrapper id="dex">
+    <DexWrapper id="dex" className={"glow-pink"}>
       <Container>
         <Box className="row" {...row}>
           <Box className="colleft" {...col} style={{ flexDirection: 'column' }}>

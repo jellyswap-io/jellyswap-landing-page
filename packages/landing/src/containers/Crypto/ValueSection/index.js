@@ -19,7 +19,7 @@ const ValueSection = ({
   featureDescriptionStyle,
 }) => {
   return (
-    <ValueSectionWrapper id="valuesection">
+    <ValueSectionWrapper id="valuesection" className={"glow-teal"}>
       <Container noGutter mobileGutter>
         <Box className="row" {...row}>
           <FeatureBlock
