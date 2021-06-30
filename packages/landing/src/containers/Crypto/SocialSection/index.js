@@ -9,7 +9,7 @@ import FeatureBlock from 'common/components/FeatureBlock';
 import Container from 'common/components/UI/Container';
 import { SOCIAL_FEATURE } from 'common/data/Crypto';
 import { SocialSectionWrapper, FeatureSection } from './socialSection.style';
-import Button from "../../../common/components/Button";
+import Button from '../../../common/components/Button';
 
 const SocialSection = ({
   row,
@@ -33,7 +33,10 @@ const SocialSection = ({
             {SOCIAL_FEATURE.map((item, index) => (
               <Fade up key={`feature-${index}`}>
                 <a className="socialButton">
-                  <div className="imageStyle" ></div>
+                  <div
+                    className="socialImage"
+                    style={{ backgroundImage: `url(${item.image})` }}
+                  ></div>
                   <p>{item.title}</p>
                   <p>{item.des}</p>
                 </a>
@@ -92,7 +95,8 @@ SocialSection.defaultProps = {
   },
 
   description: {
-    content: 'Keep up to date with development progress and engage with the JellySwap community.',
+    content:
+      'Keep up to date with development progress and engage with the JellySwap community.',
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',

@@ -49,7 +49,7 @@ const FeatureSection = styled.section`
     box-shadow: rgb(186 186 186 / 40%) 0px 4px 16px;
     border-radius: 24px;
   }
-  .imageStyle {
+  .socialImage {
     height: 60px;
     width: 60px;
     background-size: 150%;
