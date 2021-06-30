@@ -19,6 +19,7 @@ import BETA3 from '../../assets/image/crypto/beta-3.svg';
 import discord from 'common/assets/image/crypto/discord.png'
 import reddit from 'common/assets/image/crypto/reddit.png'
 import twitter from 'common/assets/image/crypto/twitter.png'
+import telegram from 'common/assets/image/crypto/telegram.png'
 
 export const MENU_ITEMS = [
   {
@@ -108,23 +109,23 @@ export const SOCIAL_FEATURE = [
   {
     image: twitter,
     title: 'Twitter',
-    des: 'Anyone can profit off of providing liquidity or staking $JELLY.',
+    des: 'Follow @JellySwapIO for updates and news.',
   },
   {
-    image: FEATURE2,
+    image: telegram,
     title: 'Telegram',
-    des: 'List your token on JellySwap within minutes.',
+    des: 'Join the Telegram @JellySwapFinance to stay up to date with announcements.',
   },
   {
     image: discord,
     title: 'Discord',
-    des: 'Swap tokens without filling out a KYC form, offering privacy and anonymity.',
+    des: 'View announcements, enter giveaways, and engage with the community.',
   },
   {
     image: reddit,
     title: 'Reddit',
     des:
-      'Buy and sell tokens instantly without waiting for funds to clear.',
+      'Join the JellySwap community on Reddit.',
   },
 ];
 
