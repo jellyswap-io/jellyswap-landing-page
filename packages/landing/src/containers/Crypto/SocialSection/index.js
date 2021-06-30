@@ -32,13 +32,13 @@ const SocialSection = ({
           <FeatureSection>
             {SOCIAL_FEATURE.map((item, index) => (
               <Fade up key={`feature-${index}`}>
-                <a className="socialButton">
+                <a className="socialButton" href={item.link} target="_blank" rel="noreferrer">
                   <div
                     className="socialImage"
-                    style={{ backgroundImage: `url(${item.image})` }}
+                    style={{backgroundImage: `url(${item.image})`}}
                   />
-                  <p>{item.title}</p>
-                  <p>{item.des}</p>
+                  <p className={item.title + "Title"}>{item.title}</p>
+                  <p className={item.title + "Description"}>{item.des}</p>
                 </a>
                 {/*<div>{
                   <Image src={item.image} alt={item.title} />
