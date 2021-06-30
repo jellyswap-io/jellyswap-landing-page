@@ -36,7 +36,7 @@ const SocialSection = ({
                   <div
                     className="socialImage"
                     style={{ backgroundImage: `url(${item.image})` }}
-                  ></div>
+                  />
                   <p>{item.title}</p>
                   <p>{item.des}</p>
                 </a>
