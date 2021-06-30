@@ -34,13 +34,14 @@ const DexWrapper = styled.section`
 const FeatureSection = styled.section`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   .featureWrapper {
     max-width: 260px;
     margin-bottom: 45px;
     @media (max-width: 599px) {
-      max-width: 100%;
+      max-width: 45%;
     }
+
     img {
       width: 50px;
       height: 50px;
