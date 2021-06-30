@@ -57,5 +57,49 @@ const FeatureSection = styled.section`
     border-radius: 8px;
     overflow: hidden;
   }
+  .TwitterDescription {
+    color: #51ABF1;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .TelegramDescription {
+    color: #019FE3;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .DiscordDescription {
+    color: #5D72C7;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .RedditDescription {
+    color: #EF4724;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .TwitterTitle {
+    margin: 5px;
+    color: #51ABF1;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .TelegramTitle {
+    margin: 5px;
+    color: #019FE3;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .DiscordTitle {
+    margin: 5px;
+    color: #5D72C7;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .RedditTitle {
+    margin: 5px;
+    color: #EF4724;
+    font-size: 17px;
+    font-weight: 700;
+  }
 `;
 export { SocialSectionWrapper, FeatureSection };

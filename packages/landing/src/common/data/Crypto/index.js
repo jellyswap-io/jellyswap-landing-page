@@ -109,23 +109,26 @@ export const SOCIAL_FEATURE = [
   {
     image: twitter,
     title: 'Twitter',
-    des: 'Follow @JellySwapIO for updates and news.',
-  },
-  {
-    image: telegram,
-    title: 'Telegram',
-    des: 'Join the Telegram @JellySwapFinance to stay up to date with announcements.',
+    des: 'Stay up to date with @JellySwapIO for new updates.',
+    link: 'https://twitter.com/jellyswapio',
   },
   {
     image: discord,
     title: 'Discord',
-    des: 'View announcements, enter giveaways, and engage with the community.',
+    des: 'View announcements, enter giveaways, & engage with the community.',
+    link: 'https://discord.com/invite/nGFmaTY6z7'
   },
   {
     image: reddit,
     title: 'Reddit',
-    des:
-      'Join the JellySwap community on Reddit.',
+    des: 'Join the JellySwap community on our subreddit at /r/JellySwap.',
+    link: 'https://reddit.com/' // TODO
+  },
+  {
+    image: telegram,
+    title: 'Telegram',
+    des: 'Join @JellySwapFinance to stay up to date with announcements.',
+    link: 'https://t.me/jellyswapfinance'
   },
 ];
 
