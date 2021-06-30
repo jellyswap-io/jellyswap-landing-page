@@ -62,7 +62,7 @@ const ParticlesComponent = () => {
               ],
             },
             opacity: {
-              value: 0.17626369048095938,
+              value: 0.5,
               random: true,
               anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
             },

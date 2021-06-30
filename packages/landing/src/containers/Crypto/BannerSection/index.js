@@ -43,15 +43,6 @@ const BannerSection = ({
   const CommunityButtonGroup = () => (
     <Fragment>
       <Button
-        title="Join Our Telegram"
-        variant="textButton"
-        iconPosition="left"
-        icon={<Icon icon={telegram} />}
-        {...outlineBtnStyle}
-        className="btnWithoutColor"
-        onClick={() => window.open('https://t.me/jellyswapfinance')}
-      />
-      <Button
         title="Join Our Discord"
         variant="textButton"
         iconPosition="left"
@@ -59,6 +50,15 @@ const BannerSection = ({
         {...outlineBtnStyle}
         className="btnWithoutColor"
         onClick={() => window.open('https://discord.com/invite/nGFmaTY6z7')}
+      />
+      <Button
+        title="Join Our Telegram"
+        variant="textButton"
+        iconPosition="left"
+        icon={<Icon icon={telegram} />}
+        {...outlineBtnStyle}
+        className="btnWithoutColor"
+        onClick={() => window.open('https://t.me/jellyswapfinance')}
       />
     </Fragment>
   );
