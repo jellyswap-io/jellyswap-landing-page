@@ -16,7 +16,6 @@ const DexHistory = ({
   col,
   title,
   description,
-  btnStyle,
   sectionSubTitle,
   cardArea,
   featureTitleStyle,
@@ -119,12 +118,6 @@ DexHistory.defaultProps = {
     lineHeight: '27px',
     color: '#525f7f',
     textAlign: ['left', 'left'],
-  },
-  // Button default style
-  btnStyle: {
-    minWidth: '156px',
-    fontSize: '14px',
-    fontWeight: '500',
   },
   featureTitleStyle: {
     fontSize: ['18px', '18px', '20px', '20px', '20px'],

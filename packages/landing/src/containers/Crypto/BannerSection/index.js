@@ -49,7 +49,7 @@ const BannerSection = ({
         icon={<Icon icon={telegram} />}
         {...outlineBtnStyle}
         className="btnWithoutColor"
-        onClick={() => window.open('http://t.me/jellyswapfinance')}
+        onClick={() => window.open('https://t.me/jellyswapfinance')}
       />
       <Button
         title="Join Our Discord"
