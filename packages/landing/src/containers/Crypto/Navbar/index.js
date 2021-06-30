@@ -50,11 +50,6 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
               menuItems={MENU_ITEMS}
               offset={-70}
             />
-            <Link href="#">
-              <a className="navbar_button">
-                <Button {...button} title="GET STARTED" />
-              </a>
-            </Link>
             <Drawer
               width="420px"
               placement="right"
@@ -68,11 +63,6 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
                 drawerClose={true}
                 offset={-100}
               />
-              <Link href="#">
-                <a className="navbar_drawer_button">
-                  <Button {...button} title="GET STARTED" />
-                </a>
-              </Link>
             </Drawer>
           </Box>
         </Box>
