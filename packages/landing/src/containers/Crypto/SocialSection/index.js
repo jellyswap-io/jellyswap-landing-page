@@ -7,10 +7,11 @@ import Text from 'common/components/Text';
 import Heading from 'common/components/Heading';
 import FeatureBlock from 'common/components/FeatureBlock';
 import Container from 'common/components/UI/Container';
-import { VALUE_FEATURE } from 'common/data/Crypto';
-import { ValueSectionWrapper, FeatureSection } from './valueSection.style';
+import { SOCIAL_FEATURE } from 'common/data/Crypto';
+import { SocialSectionWrapper, FeatureSection } from './socialSection.style';
+import Button from "../../../common/components/Button";
 
-const ValueSection = ({
+const SocialSection = ({
   row,
   title,
   description,
@@ -19,7 +20,7 @@ const ValueSection = ({
   featureDescriptionStyle,
 }) => {
   return (
-    <ValueSectionWrapper id="valuesection">
+    <SocialSectionWrapper id="socialsection">
       <Container noGutter mobileGutter>
         <Box className="row" {...row}>
           <FeatureBlock
@@ -27,11 +28,16 @@ const ValueSection = ({
             description={<Text {...description} />}
           />
         </Box>
-        <Box className="ValueSection">
+        <Box className="SocialSection">
           <FeatureSection>
-            {VALUE_FEATURE.map((item, index) => (
+            {SOCIAL_FEATURE.map((item, index) => (
               <Fade up key={`feature-${index}`}>
-                <div className="featureWrapper">
+                <a className="socialButton">
+                  <div className="imageStyle" ></div>
+                  <p>{item.title}</p>
+                  <p>{item.des}</p>
+                </a>
+                {/*<div>{
                   <Image src={item.image} alt={item.title} />
                   <Box className="contextPortion">
                     <Heading
@@ -42,18 +48,18 @@ const ValueSection = ({
 
                     <Text content={item.des} {...featureDescriptionStyle} />
                   </Box>
-                </div>
+                </div>*/}
               </Fade>
             ))}
           </FeatureSection>
         </Box>
       </Container>
-    </ValueSectionWrapper>
+    </SocialSectionWrapper>
   );
 };
 
-// Value style props
-ValueSection.propTypes = {
+// Dex style props
+SocialSection.propTypes = {
   sectionHeader: PropTypes.object,
   sectionTitle: PropTypes.object,
   row: PropTypes.object,
@@ -62,7 +68,7 @@ ValueSection.propTypes = {
 };
 
 // Trusted default style
-ValueSection.defaultProps = {
+SocialSection.defaultProps = {
   // Trusted section row default style
   row: {
     flexBox: true,
@@ -75,7 +81,7 @@ ValueSection.defaultProps = {
   },
 
   title: {
-    content: 'Bringing Value to Jelly Token',
+    content: 'Join the Community',
     fontSize: ['24px', '26px', '30px', '36px', '40px'],
     lineHeight: ['30px', '32px', '40px', '50px', '55px'],
     fontWeight: '700',
@@ -86,7 +92,7 @@ ValueSection.defaultProps = {
   },
 
   description: {
-    content: 'Every transaction will have a fee of 0.25% to capture value for $JELLY',
+    content: 'Keep up to date with development progress and engage with the JellySwap community.',
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',
@@ -113,4 +119,4 @@ ValueSection.defaultProps = {
   },
 };
 
-export default ValueSection;
+export default SocialSection;

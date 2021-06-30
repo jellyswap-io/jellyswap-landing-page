@@ -97,7 +97,8 @@ const FooterWrapper = styled.section`
     }
   }
   .copyRight {
-    margin-top: 120px;
+    align-content: end;
+    margin-top: 15%;
     margin-left: 0;
     margin-right: 0;
     width: calc(100% - 80px);
@@ -118,7 +119,7 @@ const FooterWrapper = styled.section`
       color: #fff;
       @media (max-width: 480px) {
         font-size: 14px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
       }
     }
     .footer_social {
@@ -162,9 +163,6 @@ export const BgImageWrapper = styled.div`
   left: 0;
   width: 100%;
   top: 0;
-  @media (max-width: 1200px) {
-    display: none;
-  }
   img {
     width: 100%;
     height: auto;

@@ -17,13 +17,13 @@ import FooterBG from 'common/assets/image/crypto/footer-bg.svg';
 const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
   return (
     <FooterWrapper id="footerSection">
-      <ContactSections />
+      {/*<ContactSections />*/}
       <BgImageWrapper>
         <Image src={FooterBG} alt="Footer background" />
       </BgImageWrapper>
       <Container noGutter mobileGutter width="1200px">
         <Box className="row mainRow" {...row}>
-          <Box {...colOne}>
+          {/*<Box {...colOne}>
             <Heading content="Language" {...titleStyle} />
             <Select
               options={Language_NAMES}
@@ -48,9 +48,9 @@ const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
                 </a>
               </Link>
             </Box>
-          </Box>
+          </Box>*/}
           {/* End of footer logo column */}
-          <Box {...colTwo}>
+          {/*<Box {...colTwo}>
             {menuWidget.map((widget) => (
               <Box className="col" {...col} key={widget.id}>
                 <Heading content={widget.title} {...titleStyle} />
@@ -65,7 +65,7 @@ const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
                 </List>
               </Box>
             ))}
-          </Box>
+          </Box>*/}
           {/* End of footer List column */}
         </Box>
         <Box className="row copyRight" {...row}>

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ValueSectionWrapper = styled.section`
+const SocialSectionWrapper = styled.section`
   padding: 30px 0 100px;
 `;
 const FeatureSection = styled.section`
@@ -33,5 +33,29 @@ const FeatureSection = styled.section`
       margin-left: 15px;
     }
   }
+  .socialButton {
+    width: 320px;
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    text-align: center;
+    padding: 1.5em 1em 1em;
+    margin: 1em;
+    background: white;
+    box-shadow: rgb(186 186 186 / 40%) 0px 4px 16px;
+    border-radius: 24px;
+  }
+  .imageStyle {
+    height: 60px;
+    width: 60px;
+    background-size: 150%;
+    background-position: center center;
+    border-radius: 8px;
+    overflow: hidden;
+  }
 `;
-export { ValueSectionWrapper, FeatureSection };
+export { SocialSectionWrapper, FeatureSection };

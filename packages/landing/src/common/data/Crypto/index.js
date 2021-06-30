@@ -16,6 +16,9 @@ import JACKPOTIMG from '../../assets/image/crypto/jackpot.svg';
 import BETA1 from '../../assets/image/crypto/beta-1.svg';
 import BETA2 from '../../assets/image/crypto/beta-2.svg';
 import BETA3 from '../../assets/image/crypto/beta-3.svg';
+import discord from 'common/assets/image/crypto/discord.png'
+import reddit from 'common/assets/image/crypto/reddit.png'
+import twitter from 'common/assets/image/crypto/twitter.png'
 
 export const MENU_ITEMS = [
   {
@@ -76,6 +79,7 @@ export const TESTIMONIALS = [
     avatar: `${AuthorFour}`,
   },
 ];
+
 export const DEX_FEATURE = [
   {
     image: FEATURE1,
@@ -99,6 +103,31 @@ export const DEX_FEATURE = [
       'Buy and sell tokens instantly without waiting for funds to clear.',
   },
 ];
+
+export const SOCIAL_FEATURE = [
+  {
+    image: twitter,
+    title: 'Twitter',
+    des: 'Anyone can profit off of providing liquidity or staking $JELLY.',
+  },
+  {
+    image: FEATURE2,
+    title: 'Telegram',
+    des: 'List your token on JellySwap within minutes.',
+  },
+  {
+    image: discord,
+    title: 'Discord',
+    des: 'Swap tokens without filling out a KYC form, offering privacy and anonymity.',
+  },
+  {
+    image: reddit,
+    title: 'Reddit',
+    des:
+      'Buy and sell tokens instantly without waiting for funds to clear.',
+  },
+];
+
 export const PROOFS_FEATURE = [
   {
     image: PROOF1,
