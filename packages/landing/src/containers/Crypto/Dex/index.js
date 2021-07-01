@@ -40,11 +40,11 @@ const DexHistory = ({
                   <div className="featureWrapper">
                     <Image src={item.image} alt={item.title} />
                     <Heading
+                      className="featureTitleStyle"
                       as="h3"
                       content={item.title}
-                      {...featureTitleStyle}
                     />
-                    <Text content={item.des} {...featureDescriptionStyle} />
+                    <Text content={item.des} className="featureDescriptionStyle" />
                   </div>
                 </Fade>
               ))}
@@ -117,23 +117,6 @@ DexHistory.defaultProps = {
     fontWeight: '600',
     lineHeight: '27px',
     color: '#525f7f',
-    textAlign: ['left', 'left'],
-  },
-  featureTitleStyle: {
-    fontSize: ['18px', '18px', '20px', '20px', '20px'],
-    lineHeight: ['25px', '27px', '27px', '27px', '27px'],
-    fontWeight: '500',
-    color: '#32325d',
-    letterSpacing: '-0.010em',
-    mb: '10px',
-    textAlign: ['left', 'left'],
-  },
-  // Dex section description default style
-  featureDescriptionStyle: {
-    fontSize: '16px',
-    fontWeight: '400',
-    color: '#525f7f',
-    lineHeight: '27px',
     textAlign: ['left', 'left'],
   },
 };

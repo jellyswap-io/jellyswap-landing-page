@@ -13,16 +13,26 @@ const FeatureSection = styled.section`
     align-items: flex-start;
   }
   .featureWrapper {
-    margin-top: 50px;
+    width: 300px;
+    max-width: 300px;
     display: flex;
-    @media (max-width: 599px) {
-      max-width: 100%;
-    }
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    text-align: center;
+    padding: 1.5em 1em 1em;
+    margin: 1em;
+    background: white;
+    box-shadow: rgb(186 186 186 / 40%) 0px 4px 16px;
+    border-radius: 24px;
     img {
-      width: 50px;
+      width: 100px;
       height: 50px;
       object-fit: contain;
       margin-bottom: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
       border-width: 2px;
       border-color: rgb(233, 227, 254);
       border-radius: 10px;
@@ -32,6 +42,19 @@ const FeatureSection = styled.section`
     .contextPortion {
       margin-left: 15px;
     }
+  }
+  .values {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-evenly;
+    margin: 1em 0px;
+    padding: 1em 2em;
+    width: 100%;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 `;
 export { ValueSectionWrapper, FeatureSection };
