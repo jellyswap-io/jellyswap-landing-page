@@ -29,22 +29,23 @@ const ValueSection = ({
         </Box>
         <Box className="ValueSection">
           <FeatureSection>
-            {VALUE_FEATURE.map((item, index) => (
-              <Fade up key={`feature-${index}`}>
-                <div className="featureWrapper">
-                  <Image src={item.image} alt={item.title} />
-                  <Box className="contextPortion">
-                    <Heading
-                      as="h3"
-                      content={item.title}
-                      {...featureTitleStyle}
-                    />
-
-                    <Text content={item.des} {...featureDescriptionStyle} />
-                  </Box>
-                </div>
-              </Fade>
-            ))}
+            <div className="values">
+              {VALUE_FEATURE.map((item, index) => (
+                <Fade up key={`feature-${index}`}>
+                  <div className="featureWrapper">
+                    <Image src={item.image} alt={item.title} />
+                    <Box className="contextPortion">
+                      <Heading
+                        as="h3"
+                        content={item.title}
+                        {...featureTitleStyle}
+                      />
+                      <Text content={item.des} {...featureDescriptionStyle} />
+                    </Box>
+                  </div>
+                </Fade>
+              ))}
+            </div>
           </FeatureSection>
         </Box>
       </Container>
