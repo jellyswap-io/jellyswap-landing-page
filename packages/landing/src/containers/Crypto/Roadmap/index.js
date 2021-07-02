@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Text from 'common/components/Text';
 import Container from 'common/components/UI/Container';
-import RoadmapWrapper from "./roadmap.style";
-import ScrollMenu from "react-horizontal-scrolling-menu";
-import Fade from "react-reveal/Fade";
-import Icon from "react-icons-kit";
-import { bullhorn } from "react-icons-kit/fa/bullhorn";
+import RoadmapWrapper from './roadmap.style';
+import ScrollMenu from 'react-horizontal-scrolling-menu';
+import Fade from 'react-reveal/Fade';
+import Icon from 'react-icons-kit';
+import { bullhorn } from 'react-icons-kit/fa/bullhorn';
 
 const RoadmapSection = ({
   title,
@@ -15,28 +15,57 @@ const RoadmapSection = ({
   cardTitle,
   cardSubtitle,
 }) => {
-  const titleText = ["2021 - Q2", "2021 - Q3", "2021 - Q4", "2022 - Q1"];
+  const titleText = ['2021 - Q2', '2021 - Q3', '2021 - Q4', '2022 - Q1'];
   const descriptionText = [
-    "Publish WhitePaper\nMarketing Campaign\nFinalize Tokenomics",
-    "Publish Audit Results\nLaunch on Cardano Blockchain\nICO & Airdrops",
-    "Introduce Prediction\nIntroduce Lottery",
-    "ERC-20 Bridge\nBEP-20 Bridge",
+    <p className="roadmap-text roadmap-text-1">
+      Publish WhitePaper
+      <br />
+      Marketing Campaign
+      <br />
+      Finalize Tokenomics
+    </p>,
+    <p className="roadmap-text roadmap-text-2">
+      Publish Audit Results
+      <br />
+      Launch on Cardano Blockchain
+      <br />
+      ICO & Airdrops
+    </p>,
+    <p className="roadmap-text roadmap-text-3">
+      Introduce Prediction
+      <br />
+      Introduce Lottery
+    </p>,
+    <p className="roadmap-text roadmap-text-4">
+      ERC-20 Bridge
+      <br />
+      BEP-20 Bridge
+    </p>,
   ];
-  const pictures = [0, 0, 0, 0];
+  const pictures = [
+    <Icon icon={bullhorn} size={'50px'} className="roadmap-text-1" />,
+    0,
+    0,
+    0,
+  ];
   return (
     <RoadmapWrapper id="roadmap">
       <Container>
-        <Text {...sectionSubTitle} mb={"0px"} />
+        <Text {...sectionSubTitle} mb={'0px'} />
         <Text {...title} />
         <ScrollMenu
-          arrowLeft={<div style={{ fontSize: "30px" }}>{" < "}</div>}
-          arrowRight={<div style={{ fontSize: "30px" }}>{" > "}</div>}
+          arrowLeft={<div style={{ fontSize: '30px' }}>{' < '}</div>}
+          arrowRight={<div style={{ fontSize: '30px' }}>{' > '}</div>}
           data={pictures.map((picture, index) => (
             <Fade up key={`roadmap-${index}`}>
               <div className="card">
-                <Icon icon={bullhorn} size={"50px"} />
-                <Text style={index === 0 ? mainCardTitle : cardTitle} content={titleText[index]} mb={'0px'}/>
-                <p style={cardSubtitle}> {descriptionText[index]}</p>
+                {pictures[index]}
+                <Text
+                  style={index === 0 ? mainCardTitle : cardTitle}
+                  content={titleText[index]}
+                  mb={'0px'}
+                />
+                {descriptionText[index]}
               </div>
             </Fade>
           ))}
@@ -77,7 +106,7 @@ RoadmapSection.defaultProps = {
     fontWeight: '600',
     lineHeight: '27px',
     color: '#33335E',
-    paddingTop: "20px",
+    paddingTop: '20px',
     textAlign: 'center',
   },
   mainCardTitle: {
@@ -86,7 +115,7 @@ RoadmapSection.defaultProps = {
     fontWeight: '600',
     lineHeight: '27px',
     color: '#34a385',
-    paddingTop: "20px",
+    paddingTop: '20px',
     textAlign: 'center',
   },
   cardSubtitle: {
