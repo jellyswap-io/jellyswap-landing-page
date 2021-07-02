@@ -8,6 +8,10 @@ import Image from "../../../common/components/Image";
 import Figure1 from "./figure1.png";
 import Figure2 from "./figure2.png";
 import Figure3 from "./figure3.png";
+import Equation1 from "./equation1.png";
+import Equation2 from "./equation2.png";
+import Equation3 from "./equation3.png";
+import Equation4 from "./equation4.png";
 
 const WhitepaperSection = ({
   title,
@@ -17,7 +21,7 @@ const WhitepaperSection = ({
   figureText,
 }) => {
   return (
-    <WhitepaperWrapper id="whitepaper" className={"glow-pink"}>
+    <WhitepaperWrapper id="whitepaper">
       <Container>
         <Text {...subtitle} />
         <Heading {...title} />
@@ -30,7 +34,7 @@ const WhitepaperSection = ({
         "• Bitcoin does not have Smart Contracts and uses Proof of Work\n" +
         "• Ethereum uses Proof of Work\n" +
         "• Binance is centralized\n" +
-        "\tIn contrast, the Cardano blockchain was created using proof of stake with a focus on energy efficiency. With a network that is 1.6 million times more energy efficient than Bitcoin, Cardano has significantly lower fees, faster transaction times, and a higher transaction/second limit. Created by Ethereum co-founder Charles Hoskinson, ran by a non-profit organization, and with regular collaboration with academic institutions, Cardano is a project that could overtake Bitcoin and Ethereum and become the primary blockchain of choice for investors and businesses."}</p>
+        "\tIn contrast, the Cardano blockchain was created using proof of stake with a focus on energy efficiency. With a network that is 1.6 million times more energy efficient than Bitcoin, Cardano has significantly lower fees, faster transaction times, and a higher transaction/second limit. Created by Ethereum co-founder Charles Hoskinson, ran by a non-profit organization, and with regular collaboration with academic institutions, Cardano is a project that could overtake Bitcoin and Ethereum and become the primary blockchain of choice for investors and businesses.\n"}</p>
 
         <Text {...sectionTitle} content={"2 Efficiency: PoW vs PoS"} />
         <p style={text}>{"\tEthereum and Bitcoin run using Proof of Work, which requires huge amounts of energy leading to expensive mining costs, slow transactions, and high transaction fees. It is bad for the environment and is not a realistic long-term solution. The Proof of Work algorithm works by having all miners attempt to solve a cryptographic code, rewarding the first to solve it. This leads to a massive waste of energy by all of the other miners who were unable to solve the code first. Furthermore, miners collaborate together creating “mining pools,” leading to a more centralized blockchain.\n" +
@@ -49,13 +53,27 @@ const WhitepaperSection = ({
         <p style={figureText}> {"Figure 3: Example of swapping 0.1 BTC for 1 ETH"}</p>
         <Image src={Figure3} alt={"Example of swapping 0.1 BTC for 1 ETH"}/>
         <p style={text}>{"\tHowever, this linear price calculation opens the market up for abuse. If enough BTC were traded for ETH such that there was hardly any ethereum left in the liquidity pool, the price of ETH would be near infinity. Instead, liquidity pools rely on a market maker function. In a “constant product pool,” which is the formula JellySwap will use, the product of the two assets must remain constant after a swap. "}</p>
-        <p style={text} align={"center"}> {"10 BTC × 100 ETH = 1000 BTC × ETH"}</p>
+        <Image src={Equation1} alt={"Equation1"}/>
+        <p style={text}> {"\tBy depositing 0.1 BTC, the total balance of BTC would become 10.1, and we can calculate the amount of ETH to withdraw to balance the equation. The amount of ETH left in the pool after the swap must be:"}</p>
+        <Image src={Equation2} alt={"Equation2"}/>
+        <p style={text}> {"\tThus, the user can withdraw up to"}</p>
+        <Image src={Equation3} alt={"Equation3"}/>
+        <p style={text}> {"\tSince the expected ETH for .1 BTC was 1 ETH but the user only got 0.99 ETH, there was a “price slippage” of 1%. User B got 99% of the expected value at the current price. However, as the size of the liquidity pool grows, regular traders would face a far lower price slippage. \n" +
+        "\n" +
+        "\tNow suppose a user tries to swap 5 BTC for ETH in a pool that originally has 10 BTC and 100 ETH. The expected quantity of ETH received is 50 ETH. However, since the swap makes up such a large percentage of the original quantity of BTC in the pool, there will be a large price slippage. \n"}</p>
+        <Image src={Equation4} alt={"Equation4"}/>
+        <p style={text}> {"\tSince the expected ETH was 50 but the user only got 33, there was 33/50 = 66% efficiency, or a price slippage of 33%. Thus, it is beneficial to encourage as much liquidity as possible to give swappers the most efficient trades possible. That is why a small fee of each transaction will be returned to liquidity providers, expanding the liquidity pool and encouraging people to provide liquidity. \n"}</p>
 
         <Text {...sectionTitle} content={"4 Bringing Value to Jelly Token"} />
-        <p style={text}>{""}</p>
+        <p style={text}>{"\tWe will take several measures to capture value for the $JELLY token. \n" +
+        "Each transaction will have a fee of 0.25%:\n" +
+        "• 0.17% transaction fee returned to liquidity providers to encourage people to provide more liquidity. This will also bring new investors to $JELLY, increasing demand\n" +
+        "• 0.05% transaction fee used to buy back and burn $JELLY tokens, creating a stable source of demand while reducing the supply of $JELLY on the market\n" +
+        "• 0.03% transaction fee for the $JELLY treasury, used to build infrastructure and develop the project further\n"}</p>
 
         <Text {...sectionTitle} content={"5 Conclusion"} />
-        <p style={text}>{""}</p>
+        <p style={text}>{"\tThe Cardano blockchain has lower fees, faster transaction times, a higher transaction/second limit, and greater energy efficiency. With worldwide adoption of cryptocurrencies in motion, Cardano could likely be the cryptocurrency of choice for businesses and individuals alike. \n" +
+        "With Smart Contracts launching later this year, there will be a huge surge in economic activity on the Cardano blockchain, and JellySwap aims to fulfill the need of a market to trade these tokens.\n"}</p>
 
       </Container>
     </WhitepaperWrapper>
