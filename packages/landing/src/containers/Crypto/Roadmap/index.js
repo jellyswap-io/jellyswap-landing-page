@@ -2,11 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Text from 'common/components/Text';
 import Container from 'common/components/UI/Container';
+import { bullhorn } from "react-icons-kit/fa/bullhorn";
+import {cubes} from 'react-icons-kit/fa/cubes';
+import {dice} from 'react-icons-kit/icomoon/dice';
+import {arrows_horizontal} from 'react-icons-kit/ikons/arrows_horizontal';
 import RoadmapWrapper from './roadmap.style';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
 import Fade from 'react-reveal/Fade';
 import Icon from 'react-icons-kit';
-import { bullhorn } from 'react-icons-kit/fa/bullhorn';
 
 const RoadmapSection = ({
   title,
@@ -42,7 +45,7 @@ const RoadmapSection = ({
       BEP-20 Bridge
     </p>,
   ];
-  const pictures = [<Icon icon={bullhorn} size={'50px'} />, 0, 0, 0];
+  const pictures = [<Icon icon={bullhorn} size={'50px'} />, <Icon icon={cubes} size={'50px'} />, <Icon icon={dice} size={'50px'} />, <Icon icon={arrows_horizontal} size={'50px'} />];
   return (
     <RoadmapWrapper id="roadmap">
       <Container>
