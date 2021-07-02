@@ -5,7 +5,7 @@ import BannerBG from 'common/assets/image/crypto/main_bg.svg';
 const WhitepaperBannerWrapper = styled.section`
   padding-top: 125px;
   padding-bottom: 80px;
-    // background-image: url(${BannerBG});
+  // background-image: url(${BannerBG});
   //background-color: #ff7675;
   background-image: -webkit-linear-gradient(29deg, #ff7675 0%, #fd79a8 100%);
   background-size: cover;
@@ -33,6 +33,19 @@ const WhitepaperBannerWrapper = styled.section`
   .row {
     position: relative;
     z-index: 1;
+  }
+
+  .subheading {
+    color: white;
+  }
+
+  .subheading-start {
+    flex-grow: 1;
+  }
+
+  .subheading-row {
+    display: flex;
+    align-content: space-between;
   }
 `;
 export default WhitepaperBannerWrapper;

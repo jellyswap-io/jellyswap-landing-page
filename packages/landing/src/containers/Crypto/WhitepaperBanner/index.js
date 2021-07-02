@@ -4,24 +4,23 @@ import Box from 'common/components/Box';
 import Heading from 'common/components/Heading';
 import FeatureBlock from 'common/components/FeatureBlock';
 import Container from 'common/components/UI/Container';
-import WhitepaperBannerWrapper from "./whitepaperBanner.style";
+import WhitepaperBannerWrapper from './whitepaperBanner.style';
 
-const WhitepaperBannerSection = ({
-  row,
-  col,
-  title,
-}) => {
+const WhitepaperBannerSection = ({ row, col, title }) => {
   return (
     <WhitepaperBannerWrapper id="whitepaper_banner_section">
       <Container>
         <Box className="row" {...row}>
           <Box className="col" {...col}>
-            <FeatureBlock
-              title={<Heading content="Whitepaper" {...title} />}
-            />
-            <FeatureBlock/>
+            <FeatureBlock title={<Heading content="Whitepaper" {...title} />} />
           </Box>
         </Box>
+        <div className="subheading-row">
+          <h3 className="subheading subheading-start">
+            Learn how JellySwap works
+          </h3>
+          <p className="subheading">Last updated June 23, 2021</p>
+        </div>
       </Container>
     </WhitepaperBannerWrapper>
   );
