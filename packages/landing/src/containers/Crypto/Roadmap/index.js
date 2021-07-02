@@ -17,37 +17,32 @@ const RoadmapSection = ({
 }) => {
   const titleText = ['2021 - Q2', '2021 - Q3', '2021 - Q4', '2022 - Q1'];
   const descriptionText = [
-    <p className="roadmap-text roadmap-text-1">
+    <p>
       Publish WhitePaper
       <br />
       Marketing Campaign
       <br />
       Finalize Tokenomics
     </p>,
-    <p className="roadmap-text roadmap-text-2">
+    <p>
       Publish Audit Results
       <br />
       Launch on Cardano Blockchain
       <br />
       ICO & Airdrops
     </p>,
-    <p className="roadmap-text roadmap-text-3">
+    <p>
       Introduce Prediction
       <br />
       Introduce Lottery
     </p>,
-    <p className="roadmap-text roadmap-text-4">
+    <p>
       ERC-20 Bridge
       <br />
       BEP-20 Bridge
     </p>,
   ];
-  const pictures = [
-    <Icon icon={bullhorn} size={'50px'} className="roadmap-text-1" />,
-    0,
-    0,
-    0,
-  ];
+  const pictures = [<Icon icon={bullhorn} size={'50px'} />, 0, 0, 0];
   return (
     <RoadmapWrapper id="roadmap">
       <Container>
