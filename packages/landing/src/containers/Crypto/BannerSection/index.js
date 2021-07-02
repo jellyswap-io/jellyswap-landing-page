@@ -20,8 +20,6 @@ const BannerSection = ({
   title,
   btnStyle,
   description,
-  discountText,
-  discountAmount,
   outlineBtnStyle,
 }) => {
   const ButtonGroup = () => (

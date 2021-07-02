@@ -4,9 +4,9 @@ import Text from 'common/components/Text';
 import Container from 'common/components/UI/Container';
 import RoadmapWrapper from "./roadmap.style";
 import ScrollMenu from "react-horizontal-scrolling-menu";
-import temp from 'common/assets/image/crypto/author-1.jpg';
 import Fade from "react-reveal/Fade";
-import Image from "../../../common/components/Image";
+import Icon from "react-icons-kit";
+import { bullhorn } from "react-icons-kit/fa/bullhorn";
 
 const RoadmapSection = ({
   title,
@@ -34,7 +34,7 @@ const RoadmapSection = ({
           data={pictures.map((picture, index) => (
             <Fade up key={`roadmap-${index}`}>
               <div className="card">
-                <Image src={temp} alt={"temp"}/>
+                <Icon icon={bullhorn} size={"50px"} />
                 <Text style={index === 0 ? mainCardTitle : cardTitle} content={titleText[index]} mb={'0px'}/>
                 <p style={cardSubtitle}> {descriptionText[index]}</p>
               </div>
