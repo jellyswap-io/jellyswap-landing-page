@@ -28,23 +28,27 @@ export const MENU_ITEMS = [
     offset: '0',
   },
   {
-    label: 'Feature',
-    path: '#trusted',
-    offset: '0',
-  },
-  {
-    label: 'Offers',
-    path: '#scalable',
-    offset: '-10',
-  },
-
-  {
-    label: 'Payment Proofs',
+    label: 'Updates',
     path: '#featureslider',
     offset: '-10',
   },
   {
-    label: 'Contact Us',
+    label: 'Whitepaper',
+    path: '#trusted',
+    offset: '0',
+  },
+  {
+    label: 'Roadmap',
+    path: '#scalable',
+    offset: '-10',
+  },
+  {
+    label: 'Community',
+    path: '#socialSection',
+    offset: '100',
+  },
+  {
+    label: 'F.A.Q.',
     path: '#footerSection',
     offset: '380',
   },
