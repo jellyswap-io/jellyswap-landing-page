@@ -16,7 +16,12 @@ const RoadmapSection = ({
   cardSubtitle,
 }) => {
   const titleText = ["2021 - Q2", "2021 - Q3", "2021 - Q4", "2022 - Q1"];
-  const descriptionText = ["Publish WhitePaper\nMarketing Campaign\nFinalize Tokenomics"];
+  const descriptionText = [
+    "Publish WhitePaper\nMarketing Campaign\nFinalize Tokenomics",
+    "Publish Audit Results\nLaunch on Cardano Blockchain\nICO & Airdrops",
+    "Introduce Prediction\nIntroduce Lottery",
+    "ERC-20 Bridge\nBEP-20 Bridge",
+  ];
   const pictures = [0, 0, 0, 0];
   return (
     <RoadmapWrapper id="roadmap">
