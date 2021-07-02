@@ -18,8 +18,6 @@ const DexHistory = ({
   description,
   sectionSubTitle,
   cardArea,
-  featureTitleStyle,
-  featureDescriptionStyle,
 }) => {
   return (
     <DexWrapper id="dex" className={"glow-pink"}>
