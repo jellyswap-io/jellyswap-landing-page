@@ -20,7 +20,7 @@ const DexHistory = ({
   cardArea,
 }) => {
   return (
-    <DexWrapper id="dex" className={"glow-pink"}>
+    <DexWrapper id="dex">
       <Container>
         <Box className="row" {...row}>
           <Box className="colleft" {...col} style={{ flexDirection: 'column' }}>
@@ -31,7 +31,7 @@ const DexHistory = ({
               /*button={<Button title="GET DOCS" {...btnStyle} />}*/
             />
           </Box>
-          <Box className="colright" {...col} {...cardArea}>
+          <Box className="colright glow-pink" {...col} {...cardArea}>
             <FeatureSection>
               {DEX_FEATURE.map((item, index) => (
                 <Fade up key={`feature-${index}`}>
@@ -42,7 +42,10 @@ const DexHistory = ({
                       as="h3"
                       content={item.title}
                     />
-                    <Text content={item.des} className="featureDescriptionStyle" />
+                    <Text
+                      content={item.des}
+                      className="featureDescriptionStyle"
+                    />
                   </div>
                 </Fade>
               ))}

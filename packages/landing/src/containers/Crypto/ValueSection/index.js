@@ -19,7 +19,7 @@ const ValueSection = ({
   featureDescriptionStyle,
 }) => {
   return (
-    <ValueSectionWrapper id="valuesection" className={"glow-teal"}>
+    <ValueSectionWrapper id="valuesection">
       <Container noGutter mobileGutter>
         <Box className="row" {...row}>
           <FeatureBlock
@@ -27,7 +27,7 @@ const ValueSection = ({
             description={<Text {...description} />}
           />
         </Box>
-        <Box className="ValueSection">
+        <Box className="ValueSection glow-pink">
           <FeatureSection>
             <div className="values">
               {VALUE_FEATURE.map((item, index) => (
@@ -87,7 +87,8 @@ ValueSection.defaultProps = {
   },
 
   description: {
-    content: 'Every transaction will have a fee of 0.25% to capture value for $JELLY',
+    content:
+      'Every transaction will have a fee of 0.25% to capture value for $JELLY',
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',
