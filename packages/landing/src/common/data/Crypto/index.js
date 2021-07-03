@@ -28,18 +28,8 @@ export const MENU_ITEMS = [
     offset: '0',
   },
   {
-    label: 'Updates',
-    path: '#featureslider',
-    offset: '-10',
-  },
-  {
-    label: 'Whitepaper',
-    path: '#trusted',
-    offset: '0',
-  },
-  {
     label: 'Roadmap',
-    path: '#scalable',
+    path: '#roadmap',
     offset: '-10',
   },
   {
@@ -48,9 +38,14 @@ export const MENU_ITEMS = [
     offset: '100',
   },
   {
-    label: 'F.A.Q.',
-    path: '#footerSection',
-    offset: '380',
+    label: 'Updates',
+    path: 'https://medium.com', // TODO
+    offset: '0',
+  },
+  {
+    label: 'Whitepaper',
+    path: '/whitepaper',
+    offset: '0',
   },
 ];
 
