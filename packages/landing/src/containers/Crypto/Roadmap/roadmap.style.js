@@ -14,6 +14,7 @@ const RoadmapWrapper = styled.section`
   .card {
     width: 320px;
     max-width: 240px;
+    height: 280px;
     display: flex;
     flex-direction: column;
     -webkit-box-align: center;
@@ -23,9 +24,34 @@ const RoadmapWrapper = styled.section`
     text-align: center;
     padding: 1.5em 1em 1em;
     margin: 1em;
-    background: white;
     box-shadow: rgb(186 186 186 / 40%) 0px 4px 16px;
     border-radius: 24px;
   }
+  
+  .card-selected {
+    background: white;
+    border-color: #55efc4;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+  }
+  
+  .card-unselected {
+    background: white;
+    margin-top: 50px;
+  }
+
+  .card-icon {
+    rgb(83, 96, 127)
+  }
+  .card-title {
+    rgb(51, 51, 94)
+  }
+  .card-text {
+    rgb(83, 96, 127)
+  }
+  
+  .menu-wrapper--inner {
+    display: flex;
+  }
+  
 `;
 export default RoadmapWrapper;
