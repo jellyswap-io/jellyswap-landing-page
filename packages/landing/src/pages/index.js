@@ -17,6 +17,7 @@ import SlideSections from 'containers/Crypto/CryptoSlides';
 import ValueSections from 'containers/Crypto/ValueSection';
 import Footer from 'containers/Crypto/Footer';
 import SocialSection from "../containers/Crypto/SocialSection";
+import RoadmapSection from "../containers/Crypto/Roadmap";
 
 const Main = () => {
   return (
@@ -49,6 +50,7 @@ const Main = () => {
           <ScalableSections />
           <SlideSections />*/}
           <ValueSections />
+          <RoadmapSection/>
           <SocialSection />
           <Footer />
         </ContentWrapper>

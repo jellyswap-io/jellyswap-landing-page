@@ -20,8 +20,6 @@ const BannerSection = ({
   title,
   btnStyle,
   description,
-  discountText,
-  discountAmount,
   outlineBtnStyle,
 }) => {
   const ButtonGroup = () => (
@@ -35,7 +33,7 @@ const BannerSection = ({
         title="Download Whitepaper"
         variant="textButton"
         icon={<i className="flaticon-next" />}
-        onClick={() => window.open('https://google.com/')} //TODO
+        onClick={() => window.open('/whitepaper', '_self')} //TODO
         {...outlineBtnStyle}
       />
     </Fragment>
