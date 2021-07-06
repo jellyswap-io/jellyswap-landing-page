@@ -106,6 +106,9 @@ const BannerWrapper = styled.section`
         box-shadow: none !important;
       }
     }
+    .glow-white {
+      background: radial-gradient(white -100%,transparent 70%);
+    }
   }
 `;
 export const BgImageWrapper = styled.div`

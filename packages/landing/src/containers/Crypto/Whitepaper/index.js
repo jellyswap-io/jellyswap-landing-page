@@ -93,11 +93,10 @@ const WhitepaperSection = ({
           Ethereum and become the primary blockchain of choice for investors and
           businesses.
         </p>
-
         <Text
-          {...sectionTitle}
-          className="section-heading"
-          content={'Efficiency: PoW vs PoS'}
+            {...sectionTitle}
+            className="section-heading"
+            content={'Efficiency: PoW vs PoS'}
         />
         <p style={text}>
           <span className="indent" />

@@ -13,6 +13,7 @@ import { telegram } from 'react-icons-kit/icomoon/telegram';
 import { socialDiscord } from 'common/icons/socialDiscord';
 import BannerBG from 'common/assets/image/crypto/white_bg1.svg';
 import BannerWrapper, { BgImageWrapper } from './bannerSection.style';
+import jellyAnimation from 'common/assets/image/jelly-lighter2.gif'
 
 const BannerSection = ({
   row,
@@ -21,6 +22,7 @@ const BannerSection = ({
   btnStyle,
   description,
   outlineBtnStyle,
+  col2,
 }) => {
   const ButtonGroup = () => (
     <Fragment>
@@ -81,6 +83,9 @@ const BannerSection = ({
             />
             <FeatureBlock button={<CommunityButtonGroup />} />
           </Box>
+          <Box className="col2" {...col2}>
+            <Image src={jellyAnimation} alt="jelly animation" style={{background: "radial-gradient(white -100%,transparent 70%)"}}/>
+          </Box>
         </Box>
       </Container>
     </BannerWrapper>
@@ -109,6 +114,11 @@ BannerSection.defaultProps = {
     pr: '15px',
     pl: '15px',
     width: ['100%', '100%', '100%', '60%', '65%'],
+  },
+  col2: {
+    pr: '15px',
+    pl: '15px',
+    width: ['0%', '0%', '0%', '40%', '35%'],
   },
   title: {
     fontSize: ['52px', '68px', '84px', '84px', '94px'],
