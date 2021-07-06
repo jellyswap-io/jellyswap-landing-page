@@ -6,7 +6,8 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { DrawerContext } from '../../contexts/DrawerContext';
 import Link from "../Link";
 
-const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
+const ScrollSpyMenuFromAltPage = ({ className, menuItems, drawerClose, ...props }) => {
+  const url = "http://localhost:3000/";
   const { dispatch } = useContext(DrawerContext);
   // empty array for scrollspy items
   const scrollItems = [];
@@ -40,36 +41,25 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
     >
       {menuItems.map((menu, index) => (
         <li key={`menu-item-${index}`}>
-          {menu.staticLink ? (
-            <a href={menu.path}>{menu.label}</a>
+          {index === 3 ? (
+            <Link href={menu.path}>
+              {menu.label}
+            </Link>
+          ) : menu.staticLink ? (
+            <a href={url + menu.path}>{menu.label}</a>
           ) : (
             <>
-              {index === 3 || index === 4 ? (
-                  drawerClose ? (
-                    <Link
-                      href={menu.path}
-                      onClick={toggleDrawer}
-                    >
-                      {menu.label}
-                    </Link>
-                  ) : (
-                    <Link href={menu.path}>
-                      {menu.label}
-                    </Link>
-                  )
-                ) :
-                drawerClose ? (
-                <AnchorLink
-                  href={menu.path}
-                  offset={menu.offset}
+              {drawerClose ? (
+                <Link
+                  href={url + menu.path}
                   onClick={toggleDrawer}
                 >
                   {menu.label}
-                </AnchorLink>
+                </Link>
               ) : (
-                <AnchorLink href={menu.path} offset={menu.offset}>
+                <Link href={url + menu.path}>
                   {menu.label}
-                </AnchorLink>
+                </Link>
               )}
             </>
           )}
@@ -79,7 +69,7 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
   );
 };
 
-ScrollSpyMenu.propTypes = {
+ScrollSpyMenuFromAltPage.propTypes = {
   /** className of the ScrollSpyMenu. */
   className: PropTypes.string,
 
@@ -112,9 +102,9 @@ ScrollSpyMenu.propTypes = {
   onUpdate: PropTypes.func,
 };
 
-ScrollSpyMenu.defaultProps = {
+ScrollSpyMenuFromAltPage.defaultProps = {
   componentTag: 'ul',
   currentClassName: 'is-current',
 };
 
-export default ScrollSpyMenu;
+export default ScrollSpyMenuFromAltPage;

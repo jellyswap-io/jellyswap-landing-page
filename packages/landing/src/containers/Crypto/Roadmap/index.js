@@ -61,6 +61,8 @@ const RoadmapSection = ({
         <Text {...sectionSubTitle} mb={'0px'} />
         <Text {...title} />
         <ScrollMenu
+          inertiaScrolling={true}
+          wheel={false}
           arrowLeft={<div style={{ fontSize: '30px' }}>{' < '}</div>}
           arrowRight={<div style={{ fontSize: '30px' }}>{' > '}</div>}
           data={pictures.map((picture, index) => (

@@ -30,21 +30,21 @@ export const MENU_ITEMS = [
   {
     label: 'Roadmap',
     path: '#roadmap',
-    offset: '-10',
+    offset: '200',
   },
   {
     label: 'Community',
     path: '#socialSection',
-    offset: '100',
+    offset: '70',
   },
   {
     label: 'Updates',
-    path: 'https://medium.com', // TODO
+    path: 'https://medium.com',
     offset: '0',
   },
   {
     label: 'Whitepaper',
-    path: '/whitepaper',
+    path: 'whitepaper',
     offset: '0',
   },
 ];
