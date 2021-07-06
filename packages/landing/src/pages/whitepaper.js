@@ -19,6 +19,7 @@ import Footer from 'containers/Crypto/Footer';
 import SocialSection from "../containers/Crypto/SocialSection";
 import WhitepaperBanner from "../containers/Crypto/WhitepaperBanner";
 import WhitepaperSection from "../containers/Crypto/Whitepaper";
+import NavbarFromAltPage from "../containers/Crypto/NavbarFromAltPage";
 
 const WhitepaperPage = () => {
   return (
@@ -40,7 +41,7 @@ const WhitepaperPage = () => {
         <ContentWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>
-              <Navbar />
+              <NavbarFromAltPage />
             </DrawerProvider>
           </Sticky>
           <WhitepaperBanner />

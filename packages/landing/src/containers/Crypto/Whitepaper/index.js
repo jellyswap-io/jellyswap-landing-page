@@ -41,7 +41,11 @@ const WhitepaperSection = ({
           0.25%, giving liquidity providers profit in return for providing
           liquidity."
         </p>
-        <Text {...sectionTitle} content={'Background'} />
+        <Text
+          {...sectionTitle}
+          className="section-heading"
+          content={'Background'}
+        />
         <p style={text}>
           <span className="indent" /> JellySwap is a “Decentralized Exchange”
           (DEX), an application running on smart contracts on the Cardano
@@ -71,7 +75,6 @@ const WhitepaperSection = ({
           stable coin that depends on the US dollar. Each of the other three
           mentioned coins have their own fatal flaws:
           <br />
-          <br />
           <p style={{ 'margin-left': '40px' }}>
             • Bitcoin does not have Smart Contracts and uses Proof of Work
             <br />
@@ -80,14 +83,12 @@ const WhitepaperSection = ({
             <br />
             <br />• Binance is centralized
           </p>
-          <br />
-          <br />
           <span className="indent" />
           In contrast, the Cardano blockchain was created using proof of stake
           with a focus on energy efficiency. With a network that is 1.6 million
           times more energy efficient than Bitcoin, Cardano has significantly
-          lower fees, faster transaction times, and a higher transaction/second
-          limit. Created by Ethereum co-founder Charles Hoskinson, ran by a
+          lower fees, faster transaction times, and greater energy efficiency.
+          Created by Ethereum co-founder Charles Hoskinson, ran by a
           non-profit organization, and with regular collaboration with academic
           institutions, Cardano is a project that could overtake Bitcoin and
           Ethereum and become the primary blockchain of choice for investors and
@@ -122,7 +123,6 @@ const WhitepaperSection = ({
           Proof of Stake does not provide an incentive to create mining pools,
           ensuring that the network stays decentralized and secure.
         </p>
-
         <Text
           {...sectionTitle}
           className="section-heading"
@@ -237,7 +237,6 @@ const WhitepaperSection = ({
           We will take several measures to capture value for the $JELLY token.
           Each transaction will have a fee of 0.25%:
           <br />
-          <br />
           <p style={{ 'margin-left': '40px' }}>
             • 0.17% transaction fee returned to liquidity providers to encourage
             people to provide more liquidity. This will also bring new investors
@@ -252,7 +251,6 @@ const WhitepaperSection = ({
             infrastructure and develop the project further
           </p>
         </p>
-
         <Text
           {...sectionTitle}
           className="section-heading"
@@ -260,8 +258,7 @@ const WhitepaperSection = ({
         />
         <p style={text}>
           <span className="indent" />
-          The Cardano blockchain has lower fees, faster transaction times, a
-          higher transaction/second limit, and greater energy efficiency. With
+          The Cardano blockchain has lower fees, faster transaction times, and greater energy efficiency. With
           worldwide adoption of cryptocurrencies in motion, Cardano could likely
           be the cryptocurrency of choice for businesses and individuals alike.
           <br />
