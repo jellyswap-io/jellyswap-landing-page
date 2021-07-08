@@ -8,16 +8,12 @@ import { GlobalStyle, ContentWrapper } from 'containers/Crypto/crypto.style';
 import { DrawerProvider } from 'common/contexts/DrawerContext';
 import Navbar from 'containers/Crypto/Navbar';
 import Banner from 'containers/Crypto/BannerSection';
-import BannerSlider from 'containers/Crypto/BannerSlider';
 import Dex from 'containers/Crypto/Dex';
-import ControlSections from 'containers/Crypto/ControlSection';
-import TrustedProofSections from 'containers/Crypto/TrustedProof';
-import ScalableSections from 'containers/Crypto/ScalableSection';
-import SlideSections from 'containers/Crypto/CryptoSlides';
 import ValueSections from 'containers/Crypto/ValueSection';
 import Footer from 'containers/Crypto/Footer';
 import SocialSection from "../containers/Crypto/SocialSection";
 import RoadmapSection from "../containers/Crypto/Roadmap";
+import {mascotWrapper} from "../mascots/mascots.style";
 
 const Main = () => {
   return (
@@ -45,6 +41,9 @@ const Main = () => {
           <Banner />
           {/*<BannerSlider />*/}
           <Dex />
+          <mascotWrapper>
+            <div className="jellyBread"/>
+          </mascotWrapper>
           {/*<ControlSections />
           <TrustedProofSections />
           <ScalableSections />
