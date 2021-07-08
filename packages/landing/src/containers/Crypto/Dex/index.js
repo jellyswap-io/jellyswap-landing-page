@@ -5,7 +5,6 @@ import Fade from 'react-reveal/Fade';
 import Image from 'common/components/Image';
 import Text from 'common/components/Text';
 import Heading from 'common/components/Heading';
-import Button from 'common/components/Button';
 import FeatureBlock from 'common/components/FeatureBlock';
 import Container from 'common/components/UI/Container';
 import { DEX_FEATURE } from 'common/data/Crypto';

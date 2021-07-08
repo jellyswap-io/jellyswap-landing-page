@@ -13,7 +13,9 @@ import ValueSections from 'containers/Crypto/ValueSection';
 import Footer from 'containers/Crypto/Footer';
 import SocialSection from "../containers/Crypto/SocialSection";
 import RoadmapSection from "../containers/Crypto/Roadmap";
-import {mascotWrapper} from "../mascots/mascots.style";
+import {MascotWrapper} from "../common/assets/image/mascots/mascots.style";
+import jellyBread from 'common/assets/image/mascots/jelly&bread.png';
+import Image from "../common/components/Image";
 
 const Main = () => {
   return (
@@ -41,9 +43,11 @@ const Main = () => {
           <Banner />
           {/*<BannerSlider />*/}
           <Dex />
-          <mascotWrapper>
-            <div className="jellyBread"/>
-          </mascotWrapper>
+          <MascotWrapper>
+            <div className="jellyBread">
+              <Image src={jellyBread} alt={"Jelly"}/>
+            </div>
+          </MascotWrapper>
           {/*<ControlSections />
           <TrustedProofSections />
           <ScalableSections />
