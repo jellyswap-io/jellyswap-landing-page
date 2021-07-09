@@ -41,28 +41,41 @@ const ScrollSpyMenuFromAltPage = ({ className, menuItems, drawerClose, ...props 
     >
       {menuItems.map((menu, index) => (
         <li key={`menu-item-${index}`}>
-          {index === 3 ? (
-            <Link href={menu.path}>
-              {menu.label}
-            </Link>
-          ) : menu.staticLink ? (
-            <a href={url + menu.path}>{menu.label}</a>
-          ) : (
-            <>
-              {drawerClose ? (
-                <Link
-                  href={url + menu.path}
-                  onClick={toggleDrawer}
-                >
-                  {menu.label}
-                </Link>
-              ) : (
-                <Link href={url + menu.path}>
-                  {menu.label}
-                </Link>
-              )}
-            </>
-          )}
+          {index === 0 ? (
+              <>
+                {drawerClose ? (
+                  <Link
+                    href={url}
+                    onClick={toggleDrawer}
+                  >
+                    {menu.label}
+                  </Link>
+                ) : (
+                  <Link href={url}>
+                    {menu.label}
+                  </Link>
+                )}
+              </>) :
+            (index === 3 ? (
+              <Link href={menu.path}>
+                {menu.label}
+              </Link>
+            ) : (
+              <>
+                {drawerClose ? (
+                  <Link
+                    href={url + menu.path}
+                    onClick={toggleDrawer}
+                  >
+                    {menu.label}
+                  </Link>
+                ) : (
+                  <Link href={url + menu.path}>
+                    {menu.label}
+                  </Link>
+                )}
+              </>
+            ))}
         </li>
       ))}
     </Scrollspy>

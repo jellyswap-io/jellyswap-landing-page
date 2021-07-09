@@ -22,7 +22,7 @@ const DexHistory = ({
     <DexWrapper id="dex">
       <Container>
         <Box className="row" {...row}>
-          <Box className="colleft" {...col} style={{ flexDirection: 'column' }}>
+          <Box className="titleTextBox" {...col} style={{ flexDirection: 'column' }}>
             <Text {...sectionSubTitle} />
             <FeatureBlock
               title={<Heading {...title} />}

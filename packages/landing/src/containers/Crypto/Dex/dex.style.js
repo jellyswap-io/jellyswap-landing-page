@@ -8,7 +8,7 @@ const DexWrapper = styled.section`
   @media (max-width: 480px) {
     padding: 80px 0 0px;
   }
-  .colleft {
+  .titleTextBox {
     width: 35%;
     @media (max-width: 1440px) {
       width: 40%;

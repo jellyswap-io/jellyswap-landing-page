@@ -12,6 +12,16 @@ const FeatureSection = styled.section`
     justify-content: space-between;
     align-items: flex-start;
   }
+  .title {
+    padding-top: 50px;
+    padding-left: 25px;
+    background: white;
+    border-radius: 24px;
+    box-shadow: rgb(186 186 186 / 40%) 0px 4px 16px;
+    @media (max-width: 1199px) {
+      box-shadow: white 0 0 0;
+    }
+  }
   .featureWrapper {
     width: 300px;
     max-width: 300px;

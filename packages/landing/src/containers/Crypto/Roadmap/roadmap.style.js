@@ -12,6 +12,7 @@ const RoadmapWrapper = styled.section`
   justify-content: center;
   align-items: center;
   .card {
+    z-index: 10;
     width: 320px;
     max-width: 240px;
     height: 280px;
@@ -29,12 +30,14 @@ const RoadmapWrapper = styled.section`
   }
   
   .card-selected {
+    z-index: 10;
     background: white;
     border-color: #55efc4;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
   .card-unselected {
+    z-index: 10;
     background: white;
     margin-top: 50px;
   }
