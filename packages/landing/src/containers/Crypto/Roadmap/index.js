@@ -14,7 +14,6 @@ import Icon from 'react-icons-kit';
 const RoadmapSection = ({
   title,
   sectionSubTitle,
-  mainCardTitle,
   cardTitle,
   cardSubtitle,
 }) => {

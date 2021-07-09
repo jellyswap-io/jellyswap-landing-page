@@ -20,7 +20,6 @@ const WhitepaperWrapper = styled.section`
   .indent {
     margin-left: 40px;
   }
-  
 `;
 
 const FeatureSection = styled.section`

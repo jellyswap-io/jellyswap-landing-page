@@ -8,16 +8,21 @@ import { GlobalStyle, ContentWrapper } from 'containers/Crypto/crypto.style';
 import { DrawerProvider } from 'common/contexts/DrawerContext';
 import Navbar from 'containers/Crypto/Navbar';
 import Banner from 'containers/Crypto/BannerSection';
-import BannerSlider from 'containers/Crypto/BannerSlider';
 import Dex from 'containers/Crypto/Dex';
-import ControlSections from 'containers/Crypto/ControlSection';
-import TrustedProofSections from 'containers/Crypto/TrustedProof';
-import ScalableSections from 'containers/Crypto/ScalableSection';
-import SlideSections from 'containers/Crypto/CryptoSlides';
 import ValueSections from 'containers/Crypto/ValueSection';
 import Footer from 'containers/Crypto/Footer';
 import SocialSection from "../containers/Crypto/SocialSection";
 import RoadmapSection from "../containers/Crypto/Roadmap";
+import {MascotWrapper} from "../common/assets/image/mascots/mascots.style";
+import Image from "../common/components/Image";
+import jellyBread from 'common/assets/image/mascots/jelly&bread.png';
+import grapeBread from 'common/assets/image/mascots/grape&bread.png';
+import pbBread from 'common/assets/image/mascots/pb&bread.png';
+import strawberryCan from 'common/assets/image/mascots/StrawberryCan.png';
+import grapeCan from 'common/assets/image/mascots/GrapeCan.png';
+import pbJar from 'common/assets/image/mascots/PeanutbutterJar.png';
+import purpleJellyfish from 'common/assets/image/mascots/PurpleJellyfish.png';
+import tealJellyFish from 'common/assets/image/mascots/TealJellyfish.png';
 
 const Main = () => {
   return (
@@ -45,13 +50,31 @@ const Main = () => {
           <Banner />
           {/*<BannerSlider />*/}
           <Dex />
+          <MascotWrapper>
+            <div className="jellyBread">
+              <Image src={jellyBread} alt={"Jelly Bread"}/>
+            </div>
+            <div className="peanutButterBread">
+              <Image src={pbBread} alt={"Peanut Butter Bread"}/>
+            </div>
+          </MascotWrapper>
           {/*<ControlSections />
           <TrustedProofSections />
           <ScalableSections />
           <SlideSections />*/}
           <ValueSections />
           <RoadmapSection/>
+          <MascotWrapper>
+            <div className="purpleJellyfish">
+              <Image src={purpleJellyfish} alt={"Teal Jellyfish"}/>
+            </div>
+          </MascotWrapper>
           <SocialSection />
+          <MascotWrapper>
+            <div className="strawberryCan">
+              <Image src={strawberryCan} alt={"Strawberry Jelly Can"}/>
+            </div>
+          </MascotWrapper>
           <Footer />
         </ContentWrapper>
       </Fragment>

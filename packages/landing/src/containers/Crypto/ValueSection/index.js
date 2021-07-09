@@ -14,14 +14,13 @@ const ValueSection = ({
   row,
   title,
   description,
-  sectionSubTitle,
   featureTitleStyle,
   featureDescriptionStyle,
 }) => {
   return (
     <ValueSectionWrapper id="valuesection">
       <Container noGutter mobileGutter>
-        <Box className="row" {...row}>
+        <Box className="title" {...row}>
           <FeatureBlock
             title={<Heading {...title} />}
             description={<Text {...description} />}

@@ -15,9 +15,6 @@ const SocialSection = ({
   row,
   title,
   description,
-  sectionSubTitle,
-  featureTitleStyle,
-  featureDescriptionStyle,
 }) => {
   return (
     <SocialSectionWrapper id="socialSection" className={"glow-pink"}>
