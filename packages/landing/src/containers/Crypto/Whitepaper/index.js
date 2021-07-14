@@ -250,6 +250,13 @@ const WhitepaperSection = ({
             <br />• 0.03% transaction fee for the $JELLY treasury, used to build
             infrastructure and develop the project further
           </p>
+          <span className="indent" />
+          To further increase demand for $JELLY, any token swapped using $JELLY
+          instead of Cardano will only have a fee of 0.1%, all of which will be
+          returned to liquidity providers. Unlike previous swaps which have yet
+          to implement this feature, this will create real utility for our token.
+          Lastly, we will offer yield farming and “predictions” similar to
+          PancakeSwap to create another use case for our token.
         </p>
         <Text
           {...sectionTitle}
