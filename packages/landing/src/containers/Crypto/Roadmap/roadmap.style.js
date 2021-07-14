@@ -4,7 +4,7 @@ const RoadmapWrapper = styled.section`
   padding-top: 100px;
   padding-bottom: 100px;
   //background-color: #ff7675;
-  background-image: -webkit-linear-gradient(29deg, #ff7675 0%, #fd79a8 100%);
+  background-image: -webkit-linear-gradient(30deg, #6C5CE7 0%, #F37575 100%);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;

@@ -45,7 +45,7 @@ const MascotWrapper = styled.section`
       right: 50px;
     }
   }
-  .purpleJellyfish {
+  .tealJellyfish {
     position: absolute;
     bottom: 250px;
     left: 150px;

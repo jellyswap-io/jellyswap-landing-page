@@ -4,7 +4,7 @@ import FooterIamge from 'common/assets/image/crypto/footer.png';
 const FooterWrapper = styled.section`
   padding: 120px 0;
   //background-image: url(${FooterIamge});
-  background-image: -webkit-linear-gradient(29deg, #ff7675 0%, #fd79a8 100%);
+  background-image: -webkit-linear-gradient(30deg, #6C5CE7 0%, #F37575 100%);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;

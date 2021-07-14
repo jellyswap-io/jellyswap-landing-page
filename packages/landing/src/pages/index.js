@@ -65,8 +65,8 @@ const Main = () => {
           <ValueSections />
           <RoadmapSection/>
           <MascotWrapper>
-            <div className="purpleJellyfish">
-              <Image src={purpleJellyfish} alt={"Teal Jellyfish"}/>
+            <div className="tealJellyfish">
+              <Image src={tealJellyFish} alt={"Teal Jellyfish"}/>
             </div>
           </MascotWrapper>
           <SocialSection />
