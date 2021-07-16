@@ -97,24 +97,18 @@ const FooterWrapper = styled.section`
     }
   }
   .copyRight {
-    align-content: end;
+    align-content: center;
     margin-top: 15%;
+    margin-bottom: 0;
     margin-left: 0;
-    margin-right: 0;
-    width: calc(100% - 80px);
-    @media (max-width: 1440px) {
-      margin-top: 80px;
-    }
-    @media (max-width: 768px) {
-      width: calc(100% - 20px);
-      margin-top: 60px;
-    }
-    @media (max-width: 600px) {
-      margin-top: 20px;
-    }
+    bottom: 0;
+    left: 0;
     .copyRightText {
-      font-size: 16px;
+      font-size: 20px;
       font-family: 'Lato';
+      position: absolute;
+      left: 40px;
+      bottom: 20px;
       font-weight: 400;
       color: #fff;
       @media (max-width: 480px) {

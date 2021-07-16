@@ -41,6 +41,8 @@ const RoadmapSection = ({
       Introduce Lottery
     </p>,
     <p style={cardSubtitle} className="card-text">
+      Limit Orders
+      <br />
       ERC-20 Bridge
       <br />
       BEP-20 Bridge

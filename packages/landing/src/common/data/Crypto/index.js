@@ -200,7 +200,7 @@ export const VALUE_FEATURE = [
   {
     image: BETA3,
     title: '0.03% | The Treasury',
-    des: 'Fund development, marketing, and building infrastructure.',
+    des: 'Fund development, marketing, and infrastructure.',
   },
 ];
 

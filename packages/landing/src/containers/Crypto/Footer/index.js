@@ -21,60 +21,61 @@ const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
       <BgImageWrapper>
         <Image src={FooterBG} alt="Footer background" />
       </BgImageWrapper>
-      <Container noGutter mobileGutter width="1200px">
-        <Box className="row mainRow" {...row}>
-          {/*<Box {...colOne}>
-            <Heading content="Language" {...titleStyle} />
-            <Select
-              options={Language_NAMES}
-              placeholder="English"
-              className="Language_search_select"
-              aria-label="Language_search_input"
-            />
-            <Heading
-              content="Download The App"
-              {...titleStyle}
-              className="appDownload"
-            />
-            <Box className="imageWrapper">
-              <Link href="#">
-                <a>
-                  <Image src={AppImage} alt="App Image" />
-                </a>
-              </Link>
-              <Link href="#">
-                <a>
-                  <Image src={PlaystoreImage} alt="PlaystoreImage Image" />
-                </a>
-              </Link>
-            </Box>
-          </Box>*/}
-          {/* End of footer logo column */}
-          {/*<Box {...colTwo}>
-            {menuWidget.map((widget) => (
-              <Box className="col" {...col} key={widget.id}>
-                <Heading content={widget.title} {...titleStyle} />
-                <List>
-                  {widget.menuItems.map((item) => (
-                    <ListItem key={`list__item-${item.id}`}>
-                      <Link href={item.url}>
-                        <a className="ListItem">{item.text}</a>
-                      </Link>
-                    </ListItem>
-                  ))}
-                </List>
-              </Box>
-            ))}
-          </Box>*/}
-          {/* End of footer List column */}
-        </Box>
-        <Box className="row copyRight" {...row}>
-          <Text
-            content="Copyright 2018 @Crypto Corporation."
-            className="copyRightText"
-          />
-        </Box>
-      </Container>
+
+      <Box className="copyRight">
+        <Text
+          content="JellySwap 2021 ©"
+          className="copyRightText"
+        />
+      </Box>
+      {/*<Container noGutter mobileGutter width="1200px">*/}
+      {/*  <Box className="row mainRow" {...row}>*/}
+      {/*    /!*<Box {...colOne}>*/}
+      {/*      <Heading content="Language" {...titleStyle} />*/}
+      {/*      <Select*/}
+      {/*        options={Language_NAMES}*/}
+      {/*        placeholder="English"*/}
+      {/*        className="Language_search_select"*/}
+      {/*        aria-label="Language_search_input"*/}
+      {/*      />*/}
+      {/*      <Heading*/}
+      {/*        content="Download The App"*/}
+      {/*        {...titleStyle}*/}
+      {/*        className="appDownload"*/}
+      {/*      />*/}
+      {/*      <Box className="imageWrapper">*/}
+      {/*        <Link href="#">*/}
+      {/*          <a>*/}
+      {/*            <Image src={AppImage} alt="App Image" />*/}
+      {/*          </a>*/}
+      {/*        </Link>*/}
+      {/*        <Link href="#">*/}
+      {/*          <a>*/}
+      {/*            <Image src={PlaystoreImage} alt="PlaystoreImage Image" />*/}
+      {/*          </a>*/}
+      {/*        </Link>*/}
+      {/*      </Box>*/}
+      {/*    </Box>*!/*/}
+      {/*    /!* End of footer logo column *!/*/}
+      {/*    /!*<Box {...colTwo}>*/}
+      {/*      {menuWidget.map((widget) => (*/}
+      {/*        <Box className="col" {...col} key={widget.id}>*/}
+      {/*          <Heading content={widget.title} {...titleStyle} />*/}
+      {/*          <List>*/}
+      {/*            {widget.menuItems.map((item) => (*/}
+      {/*              <ListItem key={`list__item-${item.id}`}>*/}
+      {/*                <Link href={item.url}>*/}
+      {/*                  <a className="ListItem">{item.text}</a>*/}
+      {/*                </Link>*/}
+      {/*              </ListItem>*/}
+      {/*            ))}*/}
+      {/*          </List>*/}
+      {/*        </Box>*/}
+      {/*      ))}*/}
+      {/*    </Box>*!/*/}
+      {/*    /!* End of footer List column *!/*/}
+      {/*  </Box>*/}
+      {/*</Container>*/}
     </FooterWrapper>
   );
 };
