@@ -1,11 +1,8 @@
 import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import BannerBG from 'common/assets/image/crypto/main_bg.svg';
 
 const WhitepaperBannerWrapper = styled.section`
   padding-top: 125px;
   padding-bottom: 80px;
-  // background-image: url(${BannerBG});
   //background-color: #ff7675;
   background-image: -webkit-linear-gradient(30deg, #6C5CE7 0%, #F37575 100%);
   background-size: cover;

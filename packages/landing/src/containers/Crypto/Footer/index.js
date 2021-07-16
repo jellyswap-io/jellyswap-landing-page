@@ -4,14 +4,7 @@ import Link from 'next/link';
 import Box from 'common/components/Box';
 import Text from 'common/components/Text';
 import Image from 'common/components/Image';
-import Heading from 'common/components/Heading';
-import Select from 'common/components/Select';
-import Container from 'common/components/UI/Container';
-import ContactSections from '../Contact';
 import FooterWrapper, { List, ListItem, BgImageWrapper } from './footer.style';
-import { menuWidget, Language_NAMES } from 'common/data/Crypto';
-import AppImage from 'common/assets/image/crypto/footerapp.svg';
-import PlaystoreImage from 'common/assets/image/crypto/footerplay.svg';
 import FooterBG from 'common/assets/image/crypto/footer-bg.svg';
 
 const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {

@@ -37,8 +37,8 @@ const FeatureSection = styled.section`
     box-shadow: rgb(186 186 186 / 40%) 0px 4px 16px;
     border-radius: 24px;
     img {
-      width: 100px;
-      height: 50px;
+      width: 70px;
+      height: 70px;
       object-fit: contain;
       margin-bottom: 20px;
       margin-left: 10px;
