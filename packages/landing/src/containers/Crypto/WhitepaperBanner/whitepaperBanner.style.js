@@ -4,7 +4,7 @@ const WhitepaperBannerWrapper = styled.section`
   padding-top: 125px;
   padding-bottom: 80px;
   //background-color: #ff7675;
-  background-image: -webkit-linear-gradient(30deg, #6C5CE7 0%, #F37575 100%);
+  background-image: -webkit-linear-gradient(30deg, #6C5CE7 0%, #F178A6 100%);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;

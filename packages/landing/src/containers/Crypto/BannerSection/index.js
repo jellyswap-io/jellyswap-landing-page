@@ -11,9 +11,9 @@ import Particles from '../Particle';
 import { Icon } from 'react-icons-kit';
 import { telegram } from 'react-icons-kit/icomoon/telegram';
 import { socialDiscord } from 'common/icons/socialDiscord';
-import BannerBG from 'common/assets/image/crypto/white_bg1.svg';
 import BannerWrapper, { BgImageWrapper } from './bannerSection.style';
 import jellyAnimation from 'common/assets/image/jelly-lighter2.gif'
+import jellyfish from 'common/assets/image/jellyfish.svg'
 
 const BannerSection = ({
   row,
@@ -65,9 +65,6 @@ const BannerSection = ({
   return (
     <BannerWrapper id="banner_section">
       <Particles />
-      <BgImageWrapper>
-        <Image src={BannerBG} alt="banner background" />
-      </BgImageWrapper>
       <Container>
         <Box className="row" {...row}>
           <Box className="col" {...col}>
@@ -76,6 +73,7 @@ const BannerSection = ({
               description={
                 <Text
                   content="Introducing the first decentralized exchange on the Cardano Blockchain"
+                  className='subtext'
                   {...description}
                 />
               }
@@ -84,7 +82,12 @@ const BannerSection = ({
             <FeatureBlock button={<CommunityButtonGroup />} />
           </Box>
           <Box className="col2" {...col2}>
-            <Image src={jellyAnimation} alt="jelly animation" style={{background: "radial-gradient(white -100%,transparent 70%)"}}/>
+            <Image src={jellyfish} alt="" style={{
+              maxWidth: "20%",
+              position: 'absolute',
+              top: '20%',
+              right: '10%',
+            }}/>
           </Box>
         </Box>
       </Container>

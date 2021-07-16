@@ -166,7 +166,7 @@ export const ContentWrapper = styled.div`
       display: none;
     }
     .main_menu {
-      margin-right: 40px;
+      margin-left: 40px;
       li {
         display: inline-block;
         padding-left: 13px;
@@ -179,17 +179,17 @@ export const ContentWrapper = styled.div`
         }
         &.is-current {
           a {
-            color: #fff;
+            color: #F178A6;
           }
         }
         a {
           padding: 5px;
-          font-size: 16px;
+          font-size: 1vw;
           font-weight: 400;
-          color: #fff;
+          color: #000;
           transition: 0.15s ease-in-out;
           &:hover {
-            color: #fff;
+            color: #F178A6;
           }
         }
       }

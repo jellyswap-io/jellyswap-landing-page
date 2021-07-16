@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const FooterWrapper = styled.section`
   padding: 120px 0;
-  background-image: -webkit-linear-gradient(30deg, #6C5CE7 0%, #F37575 100%);
+  background-image: -webkit-linear-gradient(30deg, #6C5CE7 0%, #F178A6 100%);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;

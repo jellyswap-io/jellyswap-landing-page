@@ -33,7 +33,7 @@ const NavbarWrapper = styled.nav`
     li {
       a {
         color: ${themeGet('colors.menu', '#fff')};
-        font-size: 16px;
+        font-size: 1vw;
         font-weight: 400;
         transition: all 0.3s ease;
         &:hover {

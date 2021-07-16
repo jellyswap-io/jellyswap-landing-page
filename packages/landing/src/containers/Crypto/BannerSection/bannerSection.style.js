@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
+import BannerBG from 'common/assets/image/banner-background-lowered.svg';
 
 const BannerWrapper = styled.section`
-  padding-top: 210px;
+  padding-top: 160px;
   padding-bottom: 400px;
   //background-color: #ff7675;
-  background-image: -webkit-linear-gradient(30deg, #6C5CE7 0%, #F37575 100%);
+  background-image: url(${BannerBG});
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -17,11 +18,20 @@ const BannerWrapper = styled.section`
   }
   @media (max-width: 990px) {
     padding-top: 150px;
-    padding-bottom: 210px;
+    padding-bottom: 280px;
   }
   @media (max-width: 768px) {
     // background-image: none;
     // background-color: #6d4efe;
+  }
+  
+  .subtext {
+    width: 65%;
+  }
+  
+  .col2 {
+    display: flex;
+    justify-content: center;
   }
 
   @media only screen and (max-width: 480px) {

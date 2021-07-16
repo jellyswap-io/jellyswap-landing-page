@@ -3,25 +3,24 @@ import styled from 'styled-components';
 const DexWrapper = styled.section`
   padding: 120px 0 80px;
   @media (max-width: 1440px) {
-    padding: 80px 0 50px;
+    padding: 0px 0 50px;
   }
   @media (max-width: 480px) {
-    padding: 80px 0 0px;
+    padding: 0px 0 0px;
   }
   .titleTextBox {
     width: 35%;
     @media (max-width: 1440px) {
-      width: 40%;
+      width: 38%;
     }
     @media (max-width: 1199px) {
       width: 100%;
     }
   }
   .colright {
-    width: calc(65% - 100px);
-    margin-left: 100px;
+    width: calc(65%);
     @media (max-width: 1440px) {
-      width: calc(60% - 100px);
+      width: calc(62%);
     }
     @media (max-width: 1199px) {
       width: 100%;

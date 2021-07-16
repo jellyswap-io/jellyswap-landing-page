@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const MascotWrapper = styled.section`
   .jellyBread {
     position: absolute;
-    bottom: 700px;
+    bottom: 500px;
     left: 150px;
     transform: rotate(20deg);
     height: 180px;
@@ -13,7 +13,7 @@ const MascotWrapper = styled.section`
     opacity: 0.6;
 
     @media (max-width: 1440px) {
-      bottom: 1050px;
+      bottom: 575px;
     }
     @media (max-width: 1200px) {
       bottom: 400px;

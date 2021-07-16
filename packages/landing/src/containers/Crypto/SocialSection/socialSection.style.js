@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const SocialSectionWrapper = styled.section`
-  padding: 100px 0 100px;
+  padding: 100px 0 0px;
 `;
 const FeatureSection = styled.section`
   display: flex;
