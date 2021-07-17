@@ -85,14 +85,22 @@ const BannerSection = ({
 
           </Box>
           <Box className="col2" {...col2}>
+            <Image className='baby-jellyfish' src={jellyfish} alt="" style={{
+              maxWidth: "7.6%",
+              position: 'absolute',
+              right: '25%',
+              animationName: 'floatbaby',
+              animationDuration: '2s',
+              animationIterationCount: 'infinite',
+              zIndex: -1,
+            }}/>
             <Image className='jellyfish' src={jellyfish} alt="" style={{
               maxWidth: "20%",
               position: 'absolute',
-              right: '10%',
               animationName: 'float',
               animationDuration: '4s',
               animationIterationCount: 'infinite',
-              zIndex: -1,
+              zIndex: -2,
             }}/>
           </Box>
         </Box>

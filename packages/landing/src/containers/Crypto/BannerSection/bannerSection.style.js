@@ -152,7 +152,19 @@ const BannerWrapper = styled.section`
       background: radial-gradient(white -100%,transparent 70%);
     }
   }
-  .jellyfish{animation-name:float;}
+  @media (max-width: 575px) {
+    .baby-jellyfish {
+      visibility: hidden;
+    }
+    .jellyfish {
+      right: 10%!important;
+    }
+  }
+  
+  .jellyfish {
+    right: 5%;
+  }
+  
 
   @keyframes float {
     0%, 100% {
@@ -160,6 +172,15 @@ const BannerWrapper = styled.section`
     }
     50% {
       top: 25%;
+    }
+  }
+
+  @keyframes floatbaby {
+    0%, 100% {
+      top: 57.5%;
+    }
+    50% {
+      top: 62.5%;
     }
   }
 `;
