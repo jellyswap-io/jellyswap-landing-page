@@ -82,11 +82,13 @@ const BannerSection = ({
             <FeatureBlock button={<CommunityButtonGroup />} />
           </Box>
           <Box className="col2" {...col2}>
-            <Image src={jellyfish} alt="" style={{
+            <Image className='jellyfish' src={jellyfish} alt="" style={{
               maxWidth: "20%",
               position: 'absolute',
-              top: '20%',
               right: '10%',
+              animationName: 'moveRight',
+              animationDuration: '4s',
+              animationIterationCount: 'infinite',
             }}/>
           </Box>
         </Box>

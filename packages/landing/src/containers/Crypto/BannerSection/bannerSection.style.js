@@ -118,6 +118,16 @@ const BannerWrapper = styled.section`
       background: radial-gradient(white -100%,transparent 70%);
     }
   }
+  .jellyfish{animation-name:float;}
+
+  @keyframes float {
+    0%, 100% {
+      top: 15%;
+    }
+    50% {
+      top: 25%;
+    }
+  }
 `;
 export const BgImageWrapper = styled.div`
   position: absolute;
@@ -133,5 +143,6 @@ export const BgImageWrapper = styled.div`
       margin: -2px -1px;
     }
   }
+  
 `;
 export default BannerWrapper;
