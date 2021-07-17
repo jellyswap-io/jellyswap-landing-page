@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const DexWrapper = styled.section`
   padding: 120px 0 80px;
+  margin-top: -250px;
   @media (max-width: 1440px) {
     padding: 0px 0 50px;
   }

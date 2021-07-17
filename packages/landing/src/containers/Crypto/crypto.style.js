@@ -122,6 +122,9 @@ export const GlobalStyle = createGlobalStyle`
 export const ContentWrapper = styled.div`
   overflow: hidden;
   .sticky-nav-active {
+    .link-container {
+      margin-top: 0;
+    }
     .saas_navbar {
       background: #fff;
       box-shadow: 0px 3px 8px 0px rgba(43, 83, 135, 0.08);

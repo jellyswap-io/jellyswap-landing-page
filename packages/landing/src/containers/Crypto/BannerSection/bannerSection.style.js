@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
-import BannerBG from 'common/assets/image/banner-background-lowered.svg';
+import BannerBG from 'common/assets/image/background-big.svg';
 
 const BannerWrapper = styled.section`
   padding-top: 160px;
-  padding-bottom: 400px;
+  padding-bottom: 600px;
   //background-color: #ff7675;
   background-image: url(${BannerBG});
   background-size: cover;
@@ -13,20 +13,51 @@ const BannerWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (min-width: 1440px) {
-    background-size: contain;
-  }
   @media (max-width: 1440px) {
-    padding-bottom: 305px;
+    padding-bottom: 600px;
   }
   @media (max-width: 990px) {
     padding-top: 150px;
-    padding-bottom: 280px;
+    padding-bottom: 600px;
   }
   @media (max-width: 768px) {
     // background-image: none;
     // background-color: #6d4efe;
   }
+  
+  @media (max-width:  480px) {
+    .socialButton .btn-text {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    //.feature__block {
+    //  margin-top: -40px;
+    //  padding-bottom: 40px;
+    //}
+    
+    .social-button-container {
+      margin-bottom: 40px;
+    }
+    
+    .socialButton {
+      margin-top: 0!important;
+      height: 30px;
+      width: 30px;
+    }
+    
+    .btn-icon {
+      margin-top: 6px!important;
+      margin-left: 6px!important;
+    }
+    
+    .communityButtonsContainer {
+      padding-bottom: 160px;
+    }
+    
+  }
+  
   
   .subtext {
     width: 65%;
@@ -39,7 +70,7 @@ const BannerWrapper = styled.section`
 
   @media only screen and (max-width: 480px) {
     padding-top: 130px;
-    padding-bottom: 110px;
+    padding-bottom: 300px;
   }
   .particle {
     position: absolute;
@@ -79,7 +110,7 @@ const BannerWrapper = styled.section`
           padding-left: 15px;
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 445px) {
           padding-left: 0;
           padding-top: 15px;
         }

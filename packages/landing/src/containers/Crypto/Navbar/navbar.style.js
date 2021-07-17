@@ -11,5 +11,9 @@ const NavbarWrapper = styled.section`
       border-radius: 50px;
       background-color: white;
     }
+
+
   }
+
+  
 `;

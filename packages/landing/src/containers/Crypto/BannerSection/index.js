@@ -41,14 +41,14 @@ const BannerSection = ({
     </Fragment>
   );
   const CommunityButtonGroup = () => (
-    <Fragment>
+    <Fragment className="social-button-container">
       <Button
         title="Join Our Discord"
         variant="textButton"
         iconPosition="left"
         icon={<Icon icon={socialDiscord} />}
         {...outlineBtnStyle}
-        className="btnWithoutColor"
+        className="btnWithoutColor socialButton"
         onClick={() => window.open('https://discord.com/invite/nGFmaTY6z7')}
       />
       <Button
@@ -57,7 +57,7 @@ const BannerSection = ({
         iconPosition="left"
         icon={<Icon icon={telegram} />}
         {...outlineBtnStyle}
-        className="btnWithoutColor"
+        className="btnWithoutColor socialButton"
         onClick={() => window.open('https://t.me/jellyswapfinance')}
       />
     </Fragment>
@@ -79,7 +79,10 @@ const BannerSection = ({
               }
               button={<ButtonGroup />}
             />
-            <FeatureBlock button={<CommunityButtonGroup />} />
+            <div className='communityButtonsContainer'>
+              <FeatureBlock button={<CommunityButtonGroup />} />
+            </div>
+
           </Box>
           <Box className="col2" {...col2}>
             <Image className='jellyfish' src={jellyfish} alt="" style={{
@@ -89,6 +92,7 @@ const BannerSection = ({
               animationName: 'float',
               animationDuration: '4s',
               animationIterationCount: 'infinite',
+              zIndex: -1,
             }}/>
           </Box>
         </Box>
