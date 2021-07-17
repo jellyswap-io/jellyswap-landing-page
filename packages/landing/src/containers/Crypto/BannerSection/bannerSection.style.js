@@ -74,18 +74,16 @@ const BannerWrapper = styled.section`
   }
   .particle {
     position: absolute;
-    width: 50%;
+    width: 60%;
     height: 100%;
     top: 0;
-    left: 0;
+    left: 50%;
     overflow: hidden;
     @media (max-width: 990px) {
       display: none;
     }
-    @media only screen and (max-width: 480px) {
-      width: 100%;
-    }
   }
+  
   .row {
     position: relative;
     z-index: 1;

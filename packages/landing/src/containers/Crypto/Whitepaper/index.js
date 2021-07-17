@@ -97,6 +97,11 @@ const WhitepaperSection = ({
         <Text
             {...sectionTitle}
             className="section-heading"
+            content={''}
+        />
+        <Text
+            {...sectionTitle}
+            className="section-heading"
             content={'Efficiency: PoW vs PoS'}
         />
         <p style={text}>
