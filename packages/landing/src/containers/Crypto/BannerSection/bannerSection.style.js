@@ -13,6 +13,9 @@ const BannerWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (min-width: 1440px) {
+    background-size: contain;
+  }
   @media (max-width: 1440px) {
     padding-bottom: 305px;
   }
