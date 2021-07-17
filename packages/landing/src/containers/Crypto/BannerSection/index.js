@@ -86,7 +86,7 @@ const BannerSection = ({
               maxWidth: "20%",
               position: 'absolute',
               right: '10%',
-              animationName: 'moveRight',
+              animationName: 'float',
               animationDuration: '4s',
               animationIterationCount: 'infinite',
             }}/>
