@@ -153,7 +153,7 @@ export const ContentWrapper = styled.div`
     }
     .hamburgMenu__bar {
       > span {
-        background: #2aa275;
+        background: #00cec9;
       }
     }
   }

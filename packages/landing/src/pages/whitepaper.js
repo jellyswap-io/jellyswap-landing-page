@@ -16,7 +16,7 @@ const WhitepaperPage = () => {
     <ThemeProvider theme={cryptoTheme}>
       <Fragment>
         <Head>
-          <title>JellySwap | Cardano DEX</title>
+          <title>JellySwap | Whitepaper</title>
           <meta name="Description" content="React next landing page" />
           <meta name="theme-color" content="#ec5555" />
 

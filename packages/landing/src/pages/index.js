@@ -15,8 +15,8 @@ import SocialSection from "../containers/Crypto/SocialSection";
 import RoadmapSection from "../containers/Crypto/Roadmap";
 import {MascotWrapper} from "../common/assets/image/mascots/mascots.style";
 import Image from "../common/components/Image";
-import jellyBread from 'common/assets/image/mascots/jelly&bread.png';
-import grapeBread from 'common/assets/image/mascots/grape&bread.png';
+import jellyBread from 'common/assets/image/mascots/jellybread2.svg';
+import grapeBread from 'common/assets/image/mascots/grapejelly2.svg';
 import pbBread from 'common/assets/image/mascots/pb&bread.png';
 import strawberryCan from 'common/assets/image/mascots/StrawberryCan.png';
 import grapeCan from 'common/assets/image/mascots/GrapeCan.png';
@@ -55,7 +55,7 @@ const Main = () => {
               <Image src={jellyBread} alt={"Jelly Bread"}/>
             </div>
             <div className="peanutButterBread">
-              <Image src={pbBread} alt={"Peanut Butter Bread"}/>
+              <Image src={grapeBread} alt={"Peanut Butter Bread"}/>
             </div>
           </MascotWrapper>
           {/*<ControlSections />

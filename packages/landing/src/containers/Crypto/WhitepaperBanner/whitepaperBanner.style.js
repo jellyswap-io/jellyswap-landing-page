@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const WhitepaperBannerWrapper = styled.section`
-  padding-top: 125px;
+  padding-top: 160px;
   padding-bottom: 80px;
   //background-color: #ff7675;
   background-image: -webkit-linear-gradient(30deg, #6C5CE7 0%, #F178A6 100%);
@@ -11,11 +11,12 @@ const WhitepaperBannerWrapper = styled.section`
   display: flow-root;
   justify-content: center;
   align-items: center;
+  
   @media (max-width: 1440px) {
     padding-bottom: 80px;
   }
   @media (max-width: 990px) {
-    padding-top: 125px;
+    padding-top: 150px;
     padding-bottom: 80px;
   }
   @media (max-width: 768px) {

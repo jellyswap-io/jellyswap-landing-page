@@ -10,7 +10,7 @@ import { DrawerContext } from 'common/contexts/DrawerContext';
 
 import { MENU_ITEMS } from 'common/data/Crypto';
 
-import LogoImage from 'common/assets/image/logo-simple-faceless.svg';
+import LogoImage from 'common/assets/image/logo.svg';
 import LogoImageAlt from 'common/assets/image/logo-alt-faceless.svg';
 import ScrollSpyMenuFromAltPage from "../../../common/components/ScrollSpyMenuFromAltPage";
 
@@ -42,7 +42,7 @@ const NavbarFromAltPage = ({ navbarStyle, logoStyle, button, row, menuWrapper })
             logoStyle={logoStyle}
             className="logo-alt"
           />
-          <Box {...menuWrapper}>
+          <Box {...menuWrapper} className='link-container'>
             <ScrollSpyMenuFromAltPage
               className="main_menu"
               menuItems={MENU_ITEMS}
