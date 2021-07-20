@@ -18,20 +18,6 @@ const FeatureSection = styled.section`
     @media (max-width: 599px) {
       max-width: 100%;
     }
-    img {
-      width: 50px;
-      height: 50px;
-      object-fit: contain;
-      margin-bottom: 20px;
-      border-width: 2px;
-      border-color: rgb(233, 227, 254);
-      border-radius: 10px;
-      background-color: rgb(243, 242, 250);
-      padding: 8px 10px;
-    }
-    .contextPortion {
-      margin-left: 15px;
-    }
   }
   .socialButton {
     width: 320px;
@@ -104,10 +90,8 @@ const FeatureSection = styled.section`
 
   .socials {
     display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-around;
     margin: 1em 0px;
-    padding: 1em 2em;
+    padding: 1em 1em;
     width: 100%;
     flex-wrap: wrap;
     -webkit-align-items: center;

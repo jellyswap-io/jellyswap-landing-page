@@ -8,24 +8,11 @@ const FeatureSection = styled.section`
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  @media (max-width: 768px) {
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .title {
-    padding-top: 50px;
-    padding-left: 25px;
-    background: white;
-    border-radius: 24px;
-    box-shadow: rgb(186 186 186 / 40%) 0px 4px 16px;
-    @media (max-width: 1199px) {
-      box-shadow: white 0 0 0;
-    }
-  }
   .featureWrapper {
-    width: 300px;
-    max-width: 300px;
+    width: 270px;
+    max-width: 270px;
     display: flex;
+    flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-flex: 1;
@@ -41,30 +28,26 @@ const FeatureSection = styled.section`
       height: 70px;
       object-fit: contain;
       margin-bottom: 20px;
-      margin-left: 10px;
-      margin-right: 10px;
-      border-width: 2px;
-      border-color: rgb(233, 227, 254);
-      border-radius: 10px;
-      background-color: rgb(243, 242, 250);
-      padding: 8px 10px;
-    }
-    .contextPortion {
-      margin-left: 15px;
     }
   }
-  .values {
-    display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-evenly;
-    margin: 1em 0px;
-    padding: 1em 2em;
-    width: 100%;
-    flex-wrap: wrap;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  .featureTitleStyle{
+    font-size: 18px;
+    color: #32325d;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-weight: 500;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: -0.010em;
+  }
+  .featureDescriptionStyle{
+    font-size: 16px;
+    color: #525f7f;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 27px;
   }
 `;
 export { ValueSectionWrapper, FeatureSection };

@@ -10,6 +10,7 @@ import RoadmapWrapper from './roadmap.style';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
 import Fade from 'react-reveal/Fade';
 import Icon from 'react-icons-kit';
+import {justifyContent} from "styled-system";
 
 const RoadmapSection = ({
   title,
@@ -20,18 +21,18 @@ const RoadmapSection = ({
   const titleText = ['2021 - Q2', '2021 - Q3', '2021 - Q4', '2022 - Q1'];
   const descriptionText = [
     <p style={cardSubtitle} className="card-text">
-      Publish WhitePaper
-      <br />
-      Marketing Campaign
+      Publish Whitepaper
       <br />
       Finalize Tokenomics
+      <br />
+      Begin Development
     </p>,
     <p style={cardSubtitle} className="card-text">
+      Marketing Campaign
+      <br />
       Publish Audit Results
       <br />
       Launch on Cardano
-      <br />
-      Blockchain
       <br />
       ICO & Airdrops
     </p>,
@@ -48,7 +49,7 @@ const RoadmapSection = ({
       BEP-20 Bridge
     </p>,
   ];
-  const activeQuarterIndex = 0;
+  const activeQuarterIndex = 1;
   const pictures = [
     <Icon icon={bullhorn} size={'50px'} className="card-icon" />,
     <Icon icon={cubes} size={'50px'} className="card-icon" />,
@@ -58,36 +59,33 @@ const RoadmapSection = ({
 
   return (
     <RoadmapWrapper id="roadmap">
-      <Container>
+      <div>
         <Text {...sectionSubTitle} mb={'0px'} />
         <Text {...title} />
         <ScrollMenu
+          menuStyle={{justifyContent: "center"}}
           inertiaScrolling={true}
           wheel={false}
-          arrowLeft={<div style={{ fontSize: '30px' }}>{' < '}</div>}
-          arrowRight={<div style={{ fontSize: '30px' }}>{' > '}</div>}
           data={pictures.map((picture, index) => (
-            <Fade up key={`roadmap-${index}`}>
-              <div
-                className={
-                  index === activeQuarterIndex
-                    ? 'card card-selected'
-                    : 'card card-unselected'
-                }
-              >
-                {pictures[index]}
-                <Text
-                  style={cardTitle}
-                  content={titleText[index]}
-                  mb={'0px'}
-                  className="card-title"
-                />
-                {descriptionText[index]}
-              </div>
-            </Fade>
+            <div
+              className={
+                index === activeQuarterIndex
+                  ? 'card card-selected'
+                  : 'card card-unselected'
+              }
+            >
+              {pictures[index]}
+              <Text
+                style={cardTitle}
+                content={titleText[index]}
+                mb={'0px'}
+                className="card-title"
+              />
+              {descriptionText[index]}
+            </div>
           ))}
         />
-      </Container>
+      </div>
     </RoadmapWrapper>
   );
 };
@@ -95,6 +93,8 @@ const RoadmapSection = ({
 RoadmapSection.propTypes = {
   title: PropTypes.object,
   sectionSubTitle: PropTypes.object,
+  cardTitle: PropTypes.object,
+  cardSubtitle: PropTypes.object
 };
 
 RoadmapSection.defaultProps = {
@@ -123,15 +123,6 @@ RoadmapSection.defaultProps = {
     fontWeight: '600',
     lineHeight: '27px',
     paddingTop: '20px',
-    textAlign: 'center',
-  },
-  mainCardTitle: {
-    fontSize: ['16px', '16px', '18px', '20px', '20px'],
-    fontFamily: 'Poppins',
-    fontWeight: '600',
-    lineHeight: '27px',
-    paddingTop: '20px',
-    textAlign: 'center',
   },
   cardSubtitle: {
     whiteSpace: 'pre-wrap',
@@ -139,7 +130,6 @@ RoadmapSection.defaultProps = {
     fontFamily: 'Poppins',
     fontWeight: '400',
     lineHeight: '27px',
-    textAlign: 'center',
   },
 };
 

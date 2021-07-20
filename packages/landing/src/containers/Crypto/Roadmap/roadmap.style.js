@@ -3,29 +3,17 @@ import styled from 'styled-components';
 const RoadmapWrapper = styled.section`
   padding-top: 100px;
   padding-bottom: 100px;
-  //background-color: #ff7675;
   background-image: -webkit-linear-gradient(30deg, #6C5CE7 0%, #F178A6 100%);
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  display: flex;
+  display: block;
   justify-content: center;
-  align-items: center;
   .card {
     z-index: 10;
-    width: 320px;
+    width: 240px;
     max-width: 240px;
     height: 280px;
-    display: flex;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-flex: 1;
-    flex-grow: 1;
     text-align: center;
     padding: 1.5em 1em 1em;
     margin: 1em;
-    box-shadow: rgb(186 186 186 / 40%) 0px 4px 16px;
     border-radius: 24px;
   }
   
@@ -41,6 +29,7 @@ const RoadmapWrapper = styled.section`
     z-index: 10;
     background: white;
     margin-top: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
   .card-icon {

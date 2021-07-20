@@ -20,7 +20,7 @@ const ValueSection = ({
   return (
     <ValueSectionWrapper id="valuesection">
       <Container noGutter mobileGutter>
-        <Box className="title" {...row}>
+        <Box className="featureTitleStyle" {...row}>
           <FeatureBlock
             title={<Heading {...title} />}
             description={<Text {...description} />}
@@ -33,14 +33,12 @@ const ValueSection = ({
                 <Fade up key={`feature-${index}`}>
                   <div className="featureWrapper">
                     <Image src={item.image} alt={item.title} />
-                    <Box className="contextPortion">
-                      <Heading
-                        as="h3"
-                        content={item.title}
-                        {...featureTitleStyle}
-                      />
-                      <Text content={item.des} {...featureDescriptionStyle} />
-                    </Box>
+                    <Heading
+                      as="h3"
+                      content={item.title}
+                      {...featureTitleStyle}
+                    />
+                    <Text content={item.des} {...featureDescriptionStyle} />
                   </div>
                 </Fade>
               ))}
@@ -87,7 +85,7 @@ ValueSection.defaultProps = {
 
   description: {
     content:
-      'Every transaction will have a fee of 0.25% to capture value for $JELLY. However, any token swapped using $JELLY instead ofCardano will only have a transaction fee of 0.1%, all of which will go to the liquidity pool.',
+      'Every transaction will have a fee of 0.25% to capture value for $JELLY. However, any token swapped using $JELLY instead of Cardano will only have a transaction fee of 0.1%, all of which will go to the liquidity pool.',
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',
@@ -102,7 +100,7 @@ ValueSection.defaultProps = {
     color: '#32325d',
     letterSpacing: '-0.010em',
     mb: '10px',
-    textAlign: ['left', 'left'],
+    textAlign: ['center', 'center'],
   },
   // Trusted section description default style
   featureDescriptionStyle: {
@@ -110,7 +108,7 @@ ValueSection.defaultProps = {
     fontWeight: '400',
     color: '#525f7f',
     lineHeight: '27px',
-    textAlign: ['left', 'left'],
+    textAlign: ['center', 'center'],
   },
 };
 

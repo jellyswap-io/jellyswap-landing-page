@@ -12,7 +12,7 @@ const MascotWrapper = styled.section`
     min-width: 180px;
     opacity: 0.6;
 
-    @media (max-width: 1440px) {
+    @media (max-width: 1800px) {
       bottom: 575px;
     }
     @media (max-width: 1200px) {
