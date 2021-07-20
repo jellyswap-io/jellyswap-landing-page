@@ -110,7 +110,7 @@ export const SOCIAL_FEATURE = [
     image: reddit,
     title: 'Reddit',
     des: 'Join the JellySwap community on our subreddit at r/JellySwap.',
-    link: 'https://reddit.com/', // TODO
+    link: 'https://www.reddit.com/r/jellyswap/',
   },
   {
     image: telegram,
