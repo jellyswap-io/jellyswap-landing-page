@@ -7,7 +7,6 @@ import { DrawerContext } from '../../contexts/DrawerContext';
 import Link from "../Link";
 
 const ScrollSpyMenuFromAltPage = ({ className, menuItems, drawerClose, ...props }) => {
-  const url = "http://localhost:3000/";
   const { dispatch } = useContext(DrawerContext);
   // empty array for scrollspy items
   const scrollItems = [];
@@ -45,13 +44,13 @@ const ScrollSpyMenuFromAltPage = ({ className, menuItems, drawerClose, ...props 
               <>
                 {drawerClose ? (
                   <Link
-                    href={url}
+                    href={"/"}
                     onClick={toggleDrawer}
                   >
                     {menu.label}
                   </Link>
                 ) : (
-                  <Link href={url}>
+                  <Link href={"/"}>
                     {menu.label}
                   </Link>
                 )}
@@ -64,13 +63,13 @@ const ScrollSpyMenuFromAltPage = ({ className, menuItems, drawerClose, ...props 
               <>
                 {drawerClose ? (
                   <Link
-                    href={url + menu.path}
+                    href={"/" + menu.path}
                     onClick={toggleDrawer}
                   >
                     {menu.label}
                   </Link>
                 ) : (
-                  <Link href={url + menu.path}>
+                  <Link href={"/" + menu.path}>
                     {menu.label}
                   </Link>
                 )}
