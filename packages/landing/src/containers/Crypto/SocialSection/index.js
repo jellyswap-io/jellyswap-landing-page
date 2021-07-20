@@ -19,7 +19,7 @@ const SocialSection = ({
   return (
     <SocialSectionWrapper id="socialSection" className={"glow-pink"}>
       <Container noGutter mobileGutter>
-        <Box className="row" {...row}>
+        <Box {...row}>
           <FeatureBlock
             title={<Heading {...title} />}
             description={<Text {...description} />}

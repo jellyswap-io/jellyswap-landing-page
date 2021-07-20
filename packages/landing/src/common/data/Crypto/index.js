@@ -179,16 +179,16 @@ export const VALUE_FEATURE = [
   {
     image: liquidity,
     title: '0.17% | Liquidity Providers',
-    des: 'Increase liquidity, attract investors, & generate income.',
+    des: 'Increase liquidity, attract investors, and generate income.',
   },
   {
     image: buyback,
     title: '0.05% | Buy-Back & Burn',
-    des: 'Create a stable source of demand & reduce supply.',
+    des: 'Create a stable source of demand and reduce supply to increase price.',
   },
   {
     image: treasury,
-    title: '0.03% | The Treasury',
+    title: '0.03% | The Jelly Treasury',
     des: 'Fund development, marketing, and infrastructure.',
   },
 ];

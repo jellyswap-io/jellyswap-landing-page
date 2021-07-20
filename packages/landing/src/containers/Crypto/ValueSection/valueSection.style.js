@@ -13,11 +13,9 @@ const FeatureSection = styled.section`
     max-width: 270px;
     display: flex;
     flex-direction: column;
-    -webkit-box-align: center;
     align-items: center;
     -webkit-box-flex: 1;
     flex-grow: 1;
-    text-align: center;
     padding: 1.5em 1em 1em;
     margin: 1em;
     background: white;
@@ -48,6 +46,15 @@ const FeatureSection = styled.section`
     font-weight: 400;
     text-align: center;
     line-height: 27px;
+  }
+  .values {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 `;
 export { ValueSectionWrapper, FeatureSection };

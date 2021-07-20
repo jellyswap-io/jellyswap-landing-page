@@ -3,10 +3,10 @@
 <svg version="1.1" id="Layer_2_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1003 1010" style="enable-background:new 0 0 1003 1010;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#6C5CE7;stroke-width:70;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#000000;stroke-width:70;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#6C5CE7;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st2{fill:#5BD7DD;}
-	.st3{fill:none;stroke:#5BD7DD;stroke-width:70;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#5BD7DD;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <path class="st0" d="M385.4,318.6c0,0,120.6,32.1,219.4,0l-22,112.1H415.3L385.4,318.6z"/>
 <path class="st0" d="M590,493.6c133.2,163.1,120.6,232.6,120.6,232.6l0.3,123.1c0,0-8.8,92.2-120.9,120.6l-89.4,5"/>
@@ -14,7 +14,7 @@
 <path class="st1" d="M500.6,597.8"/>
 <path class="st1" d="M499.6,862.3"/>
 <g>
-	<path class="st2" d="M481.1,924.6v-45.6c-29.3-0.9-58.9-9.4-75.9-20.5l12.9-44.1c18.6,10.7,44.7,20.5,73,20.5
+	<path class="st2" d="M481.1,924.6V879c-29.3-0.9-58.9-9.4-75.9-20.5l12.9-44.1c18.6,10.7,44.7,20.5,73,20.5
 		c29.6,0,49.7-14.5,49.7-36.5c0-21.4-16.4-34.6-51-47.2c-48.8-17.6-80.9-40.3-80.9-83.4c0-40.3,28.3-71.1,75.2-79.6v-45.6h38.4v43.1
 		c29.6,0.9,49.7,8.2,64.5,15.7l-12.9,42.8c-11-5.4-31.8-16.1-63.6-16.1c-32.7,0-44.4,17-44.4,32.7c0,19.2,16.7,30.2,56.7,46
 		c52.3,19.5,75.5,44.7,75.5,86.6c0,39.7-27.7,74.3-78.7,83.1v48.2L481.1,924.6L481.1,924.6z"/>
@@ -29,5 +29,5 @@
 <polyline class="st3" points="684.4,313.3 716.8,345.4 806.5,255.7 839.3,288.4 843.1,159.7 "/>
 <polyline class="st3" points="312.6,315.8 280.5,347.9 190.8,258.2 158.1,290.9 154.3,162.2 "/>
 <polyline class="st3" points="312.6,315.8 344.7,283.4 255,193.7 287.8,160.9 159.3,157.1 "/>
-<path class="st3" d="M582.4,430.7c0,0,71.1,30.8,7.6,63c-2.2,1.3-4.7,2.2-7.6,3.5H414.9c-67.7-33.4,0-66.4,0-66.4H582.4z"/>
+<path class="st3" d="M582.4,430.7c0,0,71.1,30.8,7.6,63c-2.2,1.3-4.7,2.2-7.6,3.5H414.9c-67.7-33.4,0-66.4,0-66.4h167.5V430.7z"/>
 </svg>
