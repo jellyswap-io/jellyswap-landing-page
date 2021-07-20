@@ -28,7 +28,7 @@ export const MENU_ITEMS = [
   },
   {
     label: 'Updates',
-    path: 'https://medium.com',
+    path: 'https://medium.com/@jellyswapio',
     offset: '0',
   },
   {
