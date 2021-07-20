@@ -12,7 +12,6 @@ import { Icon } from 'react-icons-kit';
 import { telegram } from 'react-icons-kit/icomoon/telegram';
 import { socialDiscord } from 'common/icons/socialDiscord';
 import BannerWrapper, { BgImageWrapper } from './bannerSection.style';
-import jellyAnimation from 'common/assets/image/jelly-lighter2.gif'
 import jellyfish from 'common/assets/image/jellyfish.svg'
 
 const BannerSection = ({
@@ -28,14 +27,14 @@ const BannerSection = ({
     <Fragment>
       <Button
         title="View Updates"
-        onClick={() => window.open('https://medium.com/')} //TODO
+        onClick={() => window.open('https://medium.com/@jellyswapio')}
         {...btnStyle}
       />
       <Button
         title="Download Whitepaper"
         variant="textButton"
         icon={<i className="flaticon-next" />}
-        onClick={() => window.open('/whitepaper', '_self')} //TODO
+        onClick={() => window.open('/whitepaper', '_self')}
         {...outlineBtnStyle}
       />
     </Fragment>
