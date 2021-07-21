@@ -17,7 +17,7 @@ const SocialSection = ({
   description,
 }) => {
   return (
-    <SocialSectionWrapper id="socialSection" className={"glow-pink"}>
+    <SocialSectionWrapper id="socialSection">
       <Container noGutter mobileGutter>
         <Box {...row}>
           <FeatureBlock
@@ -27,7 +27,7 @@ const SocialSection = ({
         </Box>
         <Box className="SocialSection">
           <FeatureSection>
-            <div className="socials">
+            <div className="socials glow-pink">
               {SOCIAL_FEATURE.map((item, index) => (
                 <Fade up key={`feature-${index}`}>
                   <a

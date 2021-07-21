@@ -39,7 +39,7 @@ const WhitepaperSection = ({
           serve as a liquidity provider on JellySwap, creating a market for
           others to exchange their Cardano tokens. Traders pay a small fee of
           0.25%, giving liquidity providers profit in return for providing
-          liquidity."
+          liquidity.
         </p>
         <Text
           {...sectionTitle}
@@ -170,7 +170,7 @@ const WhitepaperSection = ({
           and 99 ETH. However, the number of tracking tokens, 10, does not
           change. Now, instead of each BTC being worth 10 ETH, a BTC is worth
           ~9.8 ETH. Since the trader “bought” ETH and “sold” BTC, the value of
-          BTC has dropped while the value of ETH has risen
+          BTC has dropped while the value of ETH has risen.
         </p>
         <div className="wp-image-container">
           <p style={figureText}>
