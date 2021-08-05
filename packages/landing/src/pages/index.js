@@ -23,6 +23,7 @@ import grapeCan from 'common/assets/image/mascots/GrapeCan.png';
 import pbJar from 'common/assets/image/mascots/PeanutbutterJar.png';
 import purpleJellyfish from 'common/assets/image/mascots/PurpleJellyfish.png';
 import tealJellyFish from 'common/assets/image/mascots/TealJellyfish.png';
+import TokenomicsSection from "../containers/Crypto/TokenomicsSection";
 
 const Main = () => {
   return (
@@ -69,6 +70,7 @@ const Main = () => {
               <Image src={tealJellyFish} alt={"Teal Jellyfish"}/>
             </div>
           </MascotWrapper>
+          <TokenomicsSection />
           <SocialSection />
           <MascotWrapper>
             <div className="strawberryCan">

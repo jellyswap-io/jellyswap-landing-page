@@ -32,7 +32,7 @@ const BannerSection = ({
         {...btnStyle}
       />
       <Button
-        title="Download Whitepaper"
+        title="View Whitepaper"
         variant="textButton"
         icon={<i className="flaticon-next" />}
         onClick={() => window.open('/whitepaper', '_self')}
@@ -58,7 +58,7 @@ const BannerSection = ({
         icon={<Icon icon={twitter} />}
         {...outlineBtnStyle}
         className="btnWithoutColor socialButton"
-        onClick={() => window.open('https://t.me/jellyswapfinance')}
+        onClick={() => window.open('https://twitter.com/jellyswapio')}
       />
     </Fragment>
   );
