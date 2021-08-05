@@ -10,6 +10,7 @@ import Container from 'common/components/UI/Container';
 import Particles from '../Particle';
 import { Icon } from 'react-icons-kit';
 import { telegram } from 'react-icons-kit/icomoon/telegram';
+import { twitter } from 'react-icons-kit/icomoon/twitter'
 import { socialDiscord } from 'common/icons/socialDiscord';
 import BannerWrapper, { BgImageWrapper } from './bannerSection.style';
 import jellyfish from 'common/assets/image/jellyfish.svg'
@@ -51,10 +52,10 @@ const BannerSection = ({
         onClick={() => window.open('https://discord.com/invite/nGFmaTY6z7')}
       />
       <Button
-        title="Join Our Telegram"
+        title="Follow our Twitter"
         variant="textButton"
         iconPosition="left"
-        icon={<Icon icon={telegram} />}
+        icon={<Icon icon={twitter} />}
         {...outlineBtnStyle}
         className="btnWithoutColor socialButton"
         onClick={() => window.open('https://t.me/jellyswapfinance')}
