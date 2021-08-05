@@ -98,6 +98,7 @@ const FeatureSection = styled.section`
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    justify-content: center;
   }
 
   @media (max-width: 720px) {

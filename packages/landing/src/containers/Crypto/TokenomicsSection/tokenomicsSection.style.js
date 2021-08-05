@@ -19,13 +19,8 @@ const FeatureSection = styled.section`
       max-width: 100%;
     }
   }
-  .tokenomicsImage {
-    height: 60px;
-    width: 60px;
-    background-size: 150%;
-    background-position: center center;
-    border-radius: 8px;
-    overflow: hidden;
+  .tokenomics-image {
+    width: 68%;
   }
 
   .tokenomics {
@@ -38,6 +33,7 @@ const FeatureSection = styled.section`
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    justify-content: center;
   }
 
   @media (max-width: 720px) {

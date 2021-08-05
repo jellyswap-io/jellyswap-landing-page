@@ -27,10 +27,8 @@ const TokenomicsSection = ({
         <Box className="Tokenomics Section">
           <FeatureSection>
             <div className="tokenomics glow-pink">
-              <Fade up key={`feature-${index}`}>
-
-
-
+              <Fade up >
+                <img className='tokenomics-image' src={tokenomicsImage} />
               </Fade>
 
             </div>
