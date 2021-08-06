@@ -19,7 +19,7 @@ export const MENU_ITEMS = [
   {
     label: 'Roadmap',
     path: '#roadmap',
-    offset: '200',
+    offset: '140',
   },
   {
     label: 'Community',
