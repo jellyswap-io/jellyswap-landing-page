@@ -1,9 +1,7 @@
 import React from 'react';
 import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
 import Container from 'common/components/UI/Container';
-import { WhitepaperWrapper, FeatureSection } from './whitepaper.style';
-import { textAlign } from 'styled-system';
+import { WhitepaperWrapper } from './whitepaper.style';
 import Image from '../../../common/components/Image';
 import Figure1 from './figure1.png';
 import Figure2 from './figure2.png';
@@ -14,8 +12,6 @@ import Equation3 from './equation3.png';
 import Equation4 from './equation4.png';
 
 const WhitepaperSection = ({
-  title,
-  subtitle,
   sectionTitle,
   text,
   figureText,
@@ -38,7 +34,7 @@ const WhitepaperSection = ({
           more attractive fees due to Cardano’s greater efficiency. Anyone can
           serve as a liquidity provider on JellySwap, creating a market for
           others to exchange their Cardano tokens. Traders pay a small fee of
-          0.25%, giving liquidity providers profit in return for providing
+          0.30%, giving liquidity providers profit in return for providing
           liquidity.
         </p>
         <Text
@@ -240,10 +236,10 @@ const WhitepaperSection = ({
         <p style={text}>
           <span className="indent" />
           We will take several measures to capture value for the $JELLY token.
-          Each transaction will have a fee of 0.25%:
+          Each transaction will have nominal a fee of 0.30%:
           <br />
           <p style={{ 'margin-left': '40px' }}>
-            • 0.17% transaction fee returned to liquidity providers to encourage
+            • 0.20% transaction fee returned to liquidity providers to encourage
             people to provide more liquidity. This will also bring new investors
             to $JELLY, increasing demand
             <br />
@@ -252,7 +248,7 @@ const WhitepaperSection = ({
             creating a stable source of demand while reducing the supply of
             $JELLY on the market
             <br />
-            <br />• 0.03% transaction fee for the $JELLY treasury, used to build
+            <br />• 0.05% transaction fee for the $JELLY treasury, used to build
             infrastructure and develop the project further
           </p>
           <span className="indent" />

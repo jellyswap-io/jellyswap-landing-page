@@ -178,7 +178,7 @@ export const SOCIAL_FEATURE = [
 export const VALUE_FEATURE = [
   {
     image: liquidity,
-    title: '0.17% | Liquidity Providers',
+    title: '0.20% | Liquidity Providers',
     des: 'Increase liquidity, attract investors, and generate income.',
   },
   {
@@ -188,7 +188,7 @@ export const VALUE_FEATURE = [
   },
   {
     image: treasury,
-    title: '0.03% | The Jelly Treasury',
+    title: '0.05% | The Jelly Treasury',
     des: 'Fund development, marketing, and infrastructure.',
   },
 ];

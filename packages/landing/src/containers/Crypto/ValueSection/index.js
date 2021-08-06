@@ -85,7 +85,7 @@ ValueSection.defaultProps = {
 
   description: {
     content:
-      'Every transaction will have a fee of 0.25% to capture value for $JELLY. However, any token swapped using $JELLY instead of Cardano will only have a transaction fee of 0.1%, all of which will go to the liquidity pool.',
+      'Every transaction will have a nominal fee of 0.30% to capture value for $JELLY. However, any token swapped using $JELLY instead of Cardano will only have a transaction fee of 0.1%, all of which will go to the liquidity pool.',
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',
