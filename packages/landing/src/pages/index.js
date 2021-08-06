@@ -31,7 +31,7 @@ const Main = () => {
       <Fragment>
         <Head>
           <title>JellySwap | Cardano DEX</title>
-          <meta name="Description" content="React next landing page" />
+          <meta name="Description" content="The homepage for JellySwap, the first decentralized exchange (DEX) on the Cardano blockchain. We are turning Cardano (ADA) into the number one network for DeFi." />
           <meta name="theme-color" content="#ec5555" />
 
           {/* Load google fonts */}

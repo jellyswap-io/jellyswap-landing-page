@@ -90,7 +90,7 @@ const BannerSection = ({
               position: 'absolute',
               right: '25%',
               animationName: 'floatbaby',
-              animationDuration: '2s',
+              animationDuration: '4s',
               animationIterationCount: 'infinite',
               zIndex: -1,
             }}/>
